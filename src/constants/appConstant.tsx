@@ -35,31 +35,41 @@ export const NAVMENU = [
   },
 ];
 
-export const ABOUTVALUE = [
-  "Executive Dashboard",
-  "Memudahkan toko anda untuk ditemukan oleh pencarian google",
-  "Mudah dikelola",
-  "Fleksible",
-  "Handal",
-];
+export const ABOUTVALUE = {
+  label: "Pernahkah kamu Merasa :",
+  value: [
+    "Pernah coba bikin konten sendiri tapi hasilnya gak rame",
+    "Sulit mencari ide kreatif dan menarik buat konten sosial media",
+    "Kekurangan/gapunya tim buat ngurus sosial media",
+    "Mau hire editor dan content creator tapi gajinya mahal",
+    "Gaada waktu buat mikirin ide konten",
+    "Pengen beli peralatan ngonten tapi harganya selangit",
+    "Boro-boro ngurus sosmed, ngurus bisnis sendiri aja masih keteteran",
+  ],
+};
 
-export const BESTITEM = [
-  {
-    label: "Desain UI Responsif",
-    img: "/mockup/mockup1.jpeg",
-    desc: "Responsif untuk segala jenis gadget dengan tampilan yang memudahkan untuk segala pengguna",
-  },
-  {
-    label: "Toko Online",
-    img: "/mockup/mockup2.jpeg",
-    desc: "Pembeli dapat dengan mudah menemukan produk anda dengan SEO (Search Engine Optimization) yang berguna untuk kemudahan pembeli menemukan produk anda serta kemudahan dalam membeli produk",
-  },
-  {
-    label: "Dashboard Penjualan",
-    img: "/mockup/mockup3.jpeg",
-    desc: "Tersedia berbagai menu yang menyesuaikan kebutuhan manajemen toko online untuk memudahkan penjualan produk anda",
-  },
-];
+export const SECTION1 = {
+  label: "Beralih dari Tradisional ke Digital",
+  desc: "Mengapa Optimasi Sosial Media Begitu Penting untuk Bisnismu?",
+  value: [
+    {
+      label: "Meningkatkan Visibilitas dan Jangkauan Pelanggan",
+      desc: "Di era digital, banyak orang menghabiskan waktu di berbagai platform media sosial seperti Instagram, Facebook, dan TikTok. Dengan optimasi sosial media, kamu dapat menjangkau audiens yang jauh lebih luas tanpa batasan ruang dan waktu.",
+    },
+    {
+      label: "Membangun Brand Awareness",
+      desc: "Sosial media dapat memperkenalkan dan memperkuat brand bisnismu kepada audiens. Dengan strategi konten yang efektif, kamu bisa menciptakan kesan yang unik serta membangun brand awareness yang kuat sehingga bisnismu akan lebih dikenal oleh audiens.",
+    },
+    {
+      label: "Berinteraksi Langsung dengan Pelanggan",
+      desc: "Kamu dapat berinteraksi langsung dengan pelanggan, hal ini bisa berupa memberikan feedback, mengajukan pertanyaan, atau berbagi pengalaman dengan mereka. Membangun interaksi dengan pelanggan dapat meningkatkan loyalitas audiens terhadap brand/bisnis mu.",
+    },
+    {
+      label: "Meningkatkan Kredibilitas dan Kepercayaan",
+      desc: "Pelanggan cenderung lebih mempercayai brand yang mereka lihat aktif dan transparan di media sosial, terutama jika brand tersebut memiliki ulasan positif, testimoni, dan engagement yang baik.",
+    },
+  ],
+};
 
 export const ADVANTAGE = [
   {

@@ -41,7 +41,7 @@ export default function Provider({ children }: { children: ReactNode }) {
       <div
         className={`${
           showNavbar ? "sticky top-0" : "absolute -top-28"
-        }  z-[60] duration-300 bg-gradient-to-r from-brand-dark to-brand`}
+        }  z-[60] duration-300 bg-gradient-to-r drop-shadow-md from-brand-dark to-brand`}
       >
         <Navbar />
       </div>

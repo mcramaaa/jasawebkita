@@ -3,7 +3,7 @@ import { convertRupiah } from "@/helper/common";
 import React from "react";
 import { LuCheckCircle } from "react-icons/lu";
 
-export default function ItemTab() {
+export default function Pricing() {
   return (
     <div className=" mt-32 mx-4 lg:mx-72 group">
       <div className="flex mt-32 flex-col gap-10">
