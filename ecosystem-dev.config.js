@@ -4,7 +4,7 @@ module.exports = {
       name: "dev-alpha-landing",
       script: "yarn",
       args: "start:prod",
-      cwd: "/var/www/whitelabel/alpha-landing/",
+      cwd: "/var/www/whitelabel/alpha-landing",
       instances: 1,
       autorestart: true,
       watch: false,
