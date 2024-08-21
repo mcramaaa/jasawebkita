@@ -1,6 +1,5 @@
-import { SECTION1, SECTION2 } from "@/constants/appConstant";
+import { SECTION2 } from "@/constants/appConstant";
 import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import Accordion from "../accordion/Accordion";
 
 export default function Section2() {

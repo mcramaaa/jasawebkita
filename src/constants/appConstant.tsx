@@ -5,13 +5,6 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
-import { MdOutlineLocalShipping } from "react-icons/md";
-import {
-  RiCustomerService2Line,
-  RiDashboardLine,
-  RiSecurePaymentLine,
-} from "react-icons/ri";
 import { TbPigMoney, TbTargetArrow, TbUsersGroup } from "react-icons/tb";
 
 export const NAVMENU = [
