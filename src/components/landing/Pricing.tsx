@@ -8,50 +8,50 @@ export default function Pricing() {
     <div className=" mt-32 mx-4 lg:mx-72 group">
       <div className="flex mt-32 flex-col gap-10">
         <div className="w-full flex flex-col justify-center items-center">
-          <h2 className="md:text-2xl text-xl gap-3 font-varella text-center">
-            Pilih paket terbaik untuk{" "}
-            <span className="font-bold text-brand-dark">Bisnismu</span>
+          <h2 className="md:text-2xl text-xl gap-3 text-center">
+            Apa saja yang bisa{" "}
+            <span className="font-bold text-brand-dark">kamu dapatkan ?</span>
           </h2>
           <div className="h-[2px] mt-2 group-hover:w-full w-0 duration-500 rounded-xl bg-brand"></div>
         </div>
       </div>
       {/* TAB */}
-      <div className="grid mt-10 lg:grid-cols-3 justify-center group gap-7 mx-10">
+      <div className="flex mt-10 lg:grid-cols-3 flex-wrap justify-center group gap-7 mx-10">
         {PACKAGE.map((data, i) => (
           <div key={i} className="flex ">
             <div
               key={i}
               className={`${
                 i % 2 !== 0
-                  ? "border-brand-dark border-2 scale-105 hover:scale-110"
+                  ? "bg-brand-bone border hover:scale-105"
                   : "border hover:scale-105"
-              } p-5 flex flex-col gap-3 font-varella  rounded-lg duration-300 bg-white hover:drop-shadow-lg`}
+              } p-5 flex flex-col gap-3 font-varella  rounded-lg duration-300 bg-white drop-shadow-md hover:drop-shadow-lg`}
             >
               <div>
-                <h3 className="font-bold text-xl">{data.title}</h3>
-                <p className="text-xs">{data.desc}</p>
+                <h3 className="font-montserrat font-bold text-xl">
+                  {data.title}
+                </h3>
               </div>
               <p className="">
                 {/* Rp. */}
-                <span className="font-bold text-2xl">
+                <span className="font-bold font-montserrat text-2xl">
                   {convertRupiah(data.price)}
                 </span>
-                /{data.duration}
+                {data.duration}
               </p>
               <button
                 className={`${
-                  i % 2 === 0
-                    ? "bg-white border border-brand-dark text-brand-dark"
-                    : "text-white"
-                } text-xl w-full rounded-lg bg-brand-dark font-bold py-1`}
+                  i % 2 === 0 ? "border border-brand text-brand-dark" : ""
+                } text-xl text-white w-full rounded-lg bg-brand-dark hover:scale-105 duration-300 font-bold py-1`}
               >
                 Pilih Paket
               </button>
-              <div className="h-[2px] mt-2 rounded-xl bg-slate-200"></div>
+              <p className="text-sm mt-4">{data.desc}</p>
+              <div className="h-[2px] rounded-xl bg-slate-200"></div>
               <div className="flex flex-col gap-2">
                 {data.features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm">
-                    <LuCheckCircle className="text-sm text-brand-dark" />
+                    <LuCheckCircle className="text-sm text-green-700" />
                     <p>{feature}</p>
                   </div>
                 ))}

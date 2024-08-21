@@ -1,3 +1,4 @@
+import { BsGraphUpArrow, BsPatchCheck } from "react-icons/bs";
 import {
   FaFacebookF,
   FaInstagram,
@@ -11,6 +12,7 @@ import {
   RiDashboardLine,
   RiSecurePaymentLine,
 } from "react-icons/ri";
+import { TbPigMoney, TbTargetArrow, TbUsersGroup } from "react-icons/tb";
 
 export const NAVMENU = [
   {
@@ -71,35 +73,40 @@ export const SECTION1 = {
   ],
 };
 
-export const ADVANTAGE = [
-  {
-    icon: <RiSecurePaymentLine />,
-    label: "Payment Gateway",
-    desc: "Dedicated Payment Gateway dengan Xendit untuk segala jenis transaksi",
-  },
-  {
-    icon: <MdOutlineLocalShipping />,
-    label: "Ekspedisi Terintegrasi",
-    desc: "Integrasi shipping dengan segala jenis ekspedisi yang ada di Indonesia",
-  },
-  {
-    icon: <IoSearch />,
-    label: "SEO Support",
-    desc: "Dukungan SEO Support untuk memudahkan pengguna menemukan produk anda",
-  },
-  {
-    icon: <RiDashboardLine />,
-    label: "Eksekutif Dasboard",
-    desc: "Kemudahan dalam memantau perkembangan bisnis anda dengan dashboard dengan data yang lengkap dan realtime",
-  },
-  {
-    icon: <RiCustomerService2Line />,
-    label: "Fleksible",
-    desc: "Dukungan custom request dalam memenuhi kebutuhan bisnis anda",
-  },
-];
-
+export const SECTION2 = {
+  label: "Bayangkan Jika Kamu Bisa",
+  desc: "Bersama Alpha Project Semua masalah mengelola konten bisa diatasi, bikin bisnis kamu lebih dikenal, lebih mudah dicari, dan makin menguntungkan setiap hari.",
+  value: [
+    {
+      icon: <TbTargetArrow />,
+      label: "Fokus Penuh pada Bisnis Utama",
+      desc: "Gaperlu pusing mikirin konten, kamu bisa sepenuhnya fokus mengembangkan bisnis dan melihat omzet naik secara konsisten.",
+    },
+    {
+      icon: <BsPatchCheck />,
+      label: "Menghasilkan Konten Berkualitas Tinggi Tanpa Ribet",
+      desc: "Konten yang menarik, kreatif, dan sesuai dengan brand kamu tersedia setiap hari tanpa harus menghabiskan waktu berjam-jam untuk memikirkan ide.",
+    },
+    {
+      icon: <TbUsersGroup />,
+      label: "Punya Tim Ahli yang Mengurus Sosial Media",
+      desc: "Sebuah tim profesional yang siap membantu mengelola dan menjalankan strategi sosial media kamu dengan biaya yang jauh lebih efisien dibandingkan mempekerjakan full-time staff.",
+    },
+    {
+      icon: <TbPigMoney />,
+      label: "Hemat Biaya Tanpa Mengorbankan Kualitas",
+      desc: "Kamu gak perlu lagi beli peralatan mahal atau membayar gaji tinggi untuk editor dan content creator, tapi tetap mendapatkan hasil yang optimal.",
+    },
+    {
+      icon: <BsGraphUpArrow />,
+      label: "Menikmati Pertumbuhan Bisnis Tanpa Beban",
+      desc: "Dengan strategi konten yang berjalan otomatis dan efektif, kamu bisa duduk santai dan melihat bisnismu berkembang. Dengan strategi yang jitu kamu bisa fokus pada hal-hal penting yang bikin bisnis mu semakin maju.",
+    },
+  ],
+};
 export const FOOTER = {
+  open: "",
+  email: "",
   address:
     "Skyloft Soho No.1868 Ciputra World, Jl. Mayjen Sungkono No.89, Gunung Sari, Dukuhpakis, Surabaya, East Java 60224",
   sosmed: [
@@ -116,7 +123,7 @@ export const FOOTER = {
       icon: <FaTwitter />,
     },
     {
-      url: "Twitter",
+      url: "whatsapp",
       icon: <FaWhatsapp />,
     },
   ],
@@ -124,63 +131,23 @@ export const FOOTER = {
 
 export const PACKAGE = [
   {
-    title: "Startup Store",
-    price: 5000000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat iusto",
-    duration: "Bulan",
-    features: [
-      "Dashboard",
-      "Customer Menu",
-      "Brand (1 Brand)",
-      "Product Menu",
-      "Order Menu",
-      "Manual Order (Order by admin)",
-      "Slider Banner Store",
-      "Balance",
-      "Admin Management (6 Account)",
-      "Role Management",
-      "Whatsapp Notifications",
-    ],
+    title: "Pemula Branding Package",
+    price: 249000,
+    desc: "Apa saja yang kamu dapatkan",
+    duration: "",
+    features: ["Logo", "Kop", "Map", "Amplop", "Stempel"],
   },
   {
-    title: "Membership Store",
+    title: "Professional Logo Creation",
     price: 10000000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat iusto",
-    duration: "Bulan",
+    desc: "Apa saja yang kamu dapatkan",
+    duration: "",
     features: [
-      "Dashboard",
-      "Customer Menu",
-      "Brand (1 Brand)",
-      "Product Menu",
-      "Order Menu",
-      "Manual Order (Order by admin)",
-      "Slider Banner Store",
-      "Balance",
-      "Admin Management (15 Account)",
-      "Role Management",
-      "Whatsapp Notifications",
-      "Membership Store",
-      "Leaderboard Membership",
-      "Reward User Comissions",
-      "Withdraw User Comissions",
-      "Coin Management",
-      "Notification Store Features",
-    ],
-  },
-  {
-    title: "Start Up Company Service",
-    price: 3000000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat iusto",
-    duration: "Tahun",
-    features: [
-      "Website 4 Halaman",
-      "12 Halaman Desain Company Profile (2x Revisi)",
-      "Kartu Nama",
-      "Stempel",
-      "3 Alterntif Logo",
-      "Kop Surat",
-      "1 Desain Amplop Uk.90",
-      "1 Desain Stand Roll Banner",
+      "1 alternatif ogo",
+      "Revisi minor 2x",
+      "2-3 hari kerja",
+      "Mini concept",
+      "File Adobe Illustrator, PNG, JPEG, PDF",
     ],
   },
 ];

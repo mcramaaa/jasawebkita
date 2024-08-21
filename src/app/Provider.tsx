@@ -45,7 +45,7 @@ export default function Provider({ children }: { children: ReactNode }) {
       >
         <Navbar />
       </div>
-      {children}
+      <div className="mb-10">{children}</div>
       <Footer />
     </div>
   );

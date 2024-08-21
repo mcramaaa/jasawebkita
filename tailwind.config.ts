@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: "Montserrat Variable",
+      },
       colors: {
         brand: {
           DEFAULT: "#1e4169",
@@ -15,6 +18,7 @@ const config: Config = {
           dark: "#000f23",
           bone: "#dce6f0",
           white: "#fafafa",
+          yellow: "#fdc500",
         },
       },
     },
