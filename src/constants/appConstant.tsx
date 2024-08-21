@@ -14,14 +14,14 @@ export const NAVMENU = [
     refKey: "home",
   },
   {
-    value: "/aboutus",
-    label: "About us",
-    refKey: "about",
-  },
-  {
     value: "#Pricing",
     label: "Pricing",
     refKey: "pricing",
+  },
+  {
+    value: "#Testimoni",
+    label: "Testimoni",
+    refKey: "testi",
   },
   {
     value: "/contact",

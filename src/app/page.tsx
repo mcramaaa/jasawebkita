@@ -43,8 +43,11 @@ export default function Home() {
       <About />
       <Section1 />
       <Section2 />
+      <div id="pricing"></div>
       <Pricing />
       <Section3 />
+
+      <div id="testi"></div>
       <Testimoni />
       <Ending />
     </div>
