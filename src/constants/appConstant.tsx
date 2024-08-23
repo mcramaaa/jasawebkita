@@ -30,6 +30,8 @@ export const NAVMENU = [
   },
 ];
 
+export const ABOUTMARQUEE = ", Kop, Map, Amplop, Stempel, Logo, Icon, Feed";
+
 export const ABOUTVALUE = {
   label: "Pernahkah kamu Merasa :",
   value: [
@@ -104,19 +106,19 @@ export const FOOTER = {
     "Skyloft Soho No.1868 Ciputra World, Jl. Mayjen Sungkono No.89, Gunung Sari, Dukuhpakis, Surabaya, East Java 60224",
   sosmed: [
     {
-      url: "Facebook",
+      url: "/",
       icon: <FaFacebookF />,
     },
     {
-      url: "Instagram",
+      url: "https://www.instagram.com/alphasosmed.project/",
       icon: <FaInstagram />,
     },
     {
-      url: "Twitter",
+      url: "/",
       icon: <FaTwitter />,
     },
     {
-      url: "whatsapp",
+      url: "/",
       icon: <FaWhatsapp />,
     },
   ],
@@ -132,7 +134,7 @@ export const PACKAGE = [
   },
   {
     title: "Professional Logo Creation",
-    price: 10000000,
+    price: 199000,
     desc: "Apa saja yang kamu dapatkan",
     duration: "",
     features: [

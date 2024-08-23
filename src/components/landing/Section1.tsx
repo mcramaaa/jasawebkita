@@ -4,7 +4,6 @@ import React from "react";
 
 export default function Section1() {
   return (
-    // bg-[url('/bg.png')]
     <div className="group bg-brand-bone  overflow-hidden relative mt-32">
       <Image
         src={"/bg.png"}

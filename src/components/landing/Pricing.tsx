@@ -25,7 +25,7 @@ export default function Pricing() {
                 i % 2 !== 0
                   ? "bg-brand-bone border hover:scale-105"
                   : "border hover:scale-105"
-              } p-5 flex flex-col gap-3 font-varella  rounded-lg duration-300 bg-white drop-shadow-md hover:drop-shadow-lg`}
+              } p-5 flex flex-col gap-3 font-varella group rounded-lg duration-300 bg-white drop-shadow-md hover:drop-shadow-lg hover:bg-brand-bone`}
             >
               <div>
                 <h3 className="font-montserrat font-bold text-xl">
@@ -47,7 +47,7 @@ export default function Pricing() {
                 Pilih Paket
               </button>
               <p className="text-sm mt-4">{data.desc}</p>
-              <div className="h-[2px] rounded-xl bg-slate-200"></div>
+              <div className="h-[2px] rounded-xl group-hover:bg-white bg-slate-200 duration-300"></div>
               <div className="flex flex-col gap-2">
                 {data.features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm">

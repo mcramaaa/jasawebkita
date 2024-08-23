@@ -6,6 +6,6 @@ interface ISection {
 }
 
 export const useSection = create<ISection>((set) => ({
-  section: "home",
+  section: "",
   setSection: (section) => set({ section }),
 }));

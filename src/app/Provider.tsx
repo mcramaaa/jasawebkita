@@ -2,22 +2,24 @@
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { useSection } from "@/zustand/useNav";
 import NextTopLoader from "nextjs-toploader";
 import React, { ReactNode, useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
 
 export default function Provider({ children }: { children: ReactNode }) {
   const [showNavbar, setShowNavbar] = useState(false);
+  const { setSection } = useSection();
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setShowNavbar(true);
+        setSection("");
       } else {
         setShowNavbar(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {

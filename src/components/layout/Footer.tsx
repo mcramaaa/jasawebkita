@@ -1,4 +1,5 @@
 import { FOOTER } from "@/constants/appConstant";
+import { useSection } from "@/zustand/useNav";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,6 +7,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { TfiHandPointRight } from "react-icons/tfi";
 
 export default function Footer() {
+  const { setSection } = useSection();
+
   return (
     <div className="relative bg-gradient-to-l from-brand-dark to-brand">
       <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
@@ -36,24 +39,30 @@ export default function Footer() {
           </div>
         </div>
         <div className="order-first md:hidden">
-          <div className="aspect-square w-20 relative">
+          <button
+            onClick={() => setSection("home")}
+            className="aspect-square w-20 relative hover:scale-110 duration-300"
+          >
             <Image
               src={"/assets/icon.png"}
               alt=""
               fill
               className="object-contain"
             />
-          </div>
+          </button>
         </div>
-        <div className="hidden md:block">
-          <div className="aspect-square w-20 relative">
+        <div className="hidden md:flex items-center">
+          <button
+            onClick={() => setSection("home")}
+            className="aspect-square w-20 relative hover:scale-110 duration-300"
+          >
             <Image
               src={"/assets/icon.png"}
               alt=""
               fill
               className="object-contain"
             />
-          </div>
+          </button>
         </div>
         <div className="flex-col">
           <div className="flex gap-2 mt-10">
@@ -75,8 +84,12 @@ export default function Footer() {
       </div>
       <div className="text-center  text-white text-sm py-3 border-t border-brand">
         <p>
-          © Copyright 2023{" "}
-          <Link href={"https://whitelabel.bbiz.co.id/"} className="font-bold">
+          © Copyright 2024 Alpha Project Crafted by{" "}
+          <Link
+            href={"https://whitelabel.bbiz.co.id/"}
+            target="_blank"
+            className="font-bold"
+          >
             BBIZ Engine
           </Link>{" "}
           All rights reserved
