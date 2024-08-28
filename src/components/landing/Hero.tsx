@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <>
       <div className="relative">
-        <div className="lg:h-[90vh] md:h-[80vh] h-[70vh] h relative overflow-hidden">
+        <div className="lg:h-[90vh] h-[90vh] h relative overflow-hidden">
           <div className="grid lg:grid-cols-2 items-center justify-center">
             <div className="flex justify-center hover:scale-110 duration-300 hover:animate-pulse">
               <div className="relative w-[39vh] md:w-[50vh] lg:w-[70vh] aspect-square">
