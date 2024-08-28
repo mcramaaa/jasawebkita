@@ -99,6 +99,43 @@ export const SECTION2 = {
     },
   ],
 };
+
+export const TESTI = [
+  {
+    label: "PT AKAS",
+    video:
+      "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/preview",
+  },
+  {
+    label: "Alpha Propertindo",
+    video:
+      "https://drive.google.com/uc?export=embed&id=1XOX0nFBC2rNNDiXa9NmKsK3TBgttrh1Y",
+  },
+];
+
+export const PACKAGE = [
+  {
+    title: "Pemula Branding Package",
+    price: 249000,
+    desc: "Apa saja yang kamu dapatkan",
+    duration: "",
+    features: ["Logo", "Kop", "Map", "Amplop", "Stempel"],
+  },
+  {
+    title: "Professional Logo Creation",
+    price: 199000,
+    desc: "Apa saja yang kamu dapatkan",
+    duration: "",
+    features: [
+      "1 alternatif ogo",
+      "Revisi minor 2x",
+      "2-3 hari kerja",
+      "Mini concept",
+      "File Adobe Illustrator, PNG, JPEG, PDF",
+    ],
+  },
+];
+
 export const FOOTER = {
   open: "",
   email: "",
@@ -123,26 +160,3 @@ export const FOOTER = {
     },
   ],
 };
-
-export const PACKAGE = [
-  {
-    title: "Pemula Branding Package",
-    price: 249000,
-    desc: "Apa saja yang kamu dapatkan",
-    duration: "",
-    features: ["Logo", "Kop", "Map", "Amplop", "Stempel"],
-  },
-  {
-    title: "Professional Logo Creation",
-    price: 199000,
-    desc: "Apa saja yang kamu dapatkan",
-    duration: "",
-    features: [
-      "1 alternatif ogo",
-      "Revisi minor 2x",
-      "2-3 hari kerja",
-      "Mini concept",
-      "File Adobe Illustrator, PNG, JPEG, PDF",
-    ],
-  },
-];
