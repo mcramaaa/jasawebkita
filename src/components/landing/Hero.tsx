@@ -21,11 +21,11 @@ export default function Hero() {
               </div>
             </div>
             <div className="lg:order-first px-4">
-              <h1 className="text-white text-5xl lg:px-40 lg:text-8xl hover:scale-110 duration-300 font-montserrat cursor-default hover:drop-shadow-lg flex font-bold flex-col justify-center text-wrap text-center items-center">
-                Stop Pusing Mikir Konten
+              <h1 className="text-white text-5xl gap-3 lg:px-20 lg:text-7xl hover:scale-110 duration-300 font-montserrat cursor-default hover:drop-shadow-lg flex font-bold flex-col justify-center text-wrap text-center items-center">
+                Stop Pusing <span>Mikir Konten</span>
               </h1>
 
-              <h2 className="text-lg lg:text-5xl mt m-5 text-center text-white">
+              <h2 className="text-lg lg:text-4xl mt-9 text-center text-white">
                 Mulai Naikin Omzet Tanpa Beban !!
               </h2>
               <div className="flex mt-4 lg:mt-10 text-white lg:gap-10  items-center justify-end text-center mx-4 flex-col">
@@ -38,7 +38,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          {/* <div className="absolute flex flex-col justify-end items-center pb-10 bottom-0 bg-gradient-to-t from-white via-white/80 to-white/0 h-3/4 w-full z-10"> */}
         </div>
         <div className="z-20 bottom-0 absolute w-full">
           <div className="relative w-full aspect-[9/1]">
