@@ -5,7 +5,7 @@ import { LuCheckCircle } from "react-icons/lu";
 
 export default function Pricing() {
   return (
-    <div className=" mt-32 mx-4 lg:mx-72 group">
+    <div className=" mt-32 px-4 lg:px-32 group w-full">
       <div className="flex mt-32 flex-col gap-10">
         <div className="w-full flex flex-col justify-center items-center">
           <h2 className="md:text-2xl text-xl gap-3 text-center">

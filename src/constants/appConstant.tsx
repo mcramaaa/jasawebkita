@@ -104,12 +104,14 @@ export const TESTI = [
   {
     label: "PT AKAS",
     video:
-      "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/preview",
+      "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/view?usp=sharing",
+    comment: "lorem ipsum dolor sit amet, consectetur adip",
   },
   {
     label: "Alpha Propertindo",
     video:
-      "https://drive.google.com/uc?export=embed&id=1XOX0nFBC2rNNDiXa9NmKsK3TBgttrh1Y",
+      "https://drive.google.com/file/d/1PvwYOab36QXigk-CnUQ096d84KWqNyE7/view?usp=sharing",
+    comment: "lorem ipsum dolor sit amet, consectetur adip",
   },
 ];
 

@@ -38,10 +38,7 @@ export default function Testimoni() {
               key={i}
             >
               <div>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  tenetur eaque adipisci voluptates ipsum magni architecto quis
-                </p>
+                <p className="text-sm">{item.comment}</p>
               </div>
               <div className="absolute bottom-0 bg-brand-bone h-2/5 w-full flex flex-col items-center gap-2">
                 <Image
@@ -66,7 +63,7 @@ export default function Testimoni() {
                     ))}
                   </div>
                 </div>
-                <Link href={""} className="text-sm">
+                <Link href={item.video} target="_blank" className="text-sm">
                   Lihat video
                 </Link>
               </div>
