@@ -7,7 +7,7 @@ export default function Ending() {
       <h2 className="text-center flex text-sm lg:mx-40 text-brand-dark font-montserrat flex-col">
         <div className="flex items-center text-center justify-center gap-3 text-brand">
           <WiStars className="group-hover:scale-110 text-6xl duration-300" />
-          <span className="text-2xl lg:text-4xl font-bold ">
+          <span className="text-2xl lg:text-3xl font-bold ">
             Tak kenal maka tak sayang
           </span>
           <WiStars className="group-hover:scale-110 text-6xl duration-300" />

@@ -68,6 +68,7 @@ export default function Footer() {
           <div className="flex gap-2 mt-10">
             {FOOTER.sosmed.map((data, i) => (
               <Link
+                target="_blank"
                 href={data.url}
                 className="text-xl hover:scale-110 hover:bg-brand duration-300 p-2 bg-brand-dark rounded-full text-white"
                 key={i}

@@ -1,9 +1,8 @@
 import { BsGraphUpArrow, BsPatchCheck } from "react-icons/bs";
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaInstagram,
   FaTiktok,
-  FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
 import { TbPigMoney, TbTargetArrow, TbUsersGroup } from "react-icons/tb";
@@ -14,11 +13,11 @@ export const NAVMENU = [
     label: "Home",
     refKey: "home",
   },
-  {
-    value: "#Pricing",
-    label: "Pricing",
-    refKey: "pricing",
-  },
+  // {
+  //   value: "#Pricing",
+  //   label: "Pricing",
+  //   refKey: "pricing",
+  // },
   {
     value: "#Testimoni",
     label: "Testimoni",
@@ -188,24 +187,20 @@ export const FOOTER = {
   address:
     "Skyloft Soho No.1868 Ciputra World, Jl. Mayjen Sungkono No.89, Gunung Sari, Dukuhpakis, Surabaya, East Java 60224",
   sosmed: [
-    {
-      url: "/",
-      icon: <FaFacebookF />,
-    },
+    // {
+    //   url: "/",
+    //   icon: <FaFacebookF />,
+    // },
     {
       url: "https://www.instagram.com/alphasosmed.project/",
       icon: <FaInstagram />,
     },
     {
-      url: "/",
-      icon: <FaTwitter />,
-    },
-    {
-      url: "/",
+      url: "https://api.whatsapp.com/send?phone=6285184864504&text=Hai%2C%20Alpha%20Project!%20Mau%20konsultasi%20untuk%20upgrading%20sosial%20media%20brand%20saya%2C%20nih!%20",
       icon: <FaWhatsapp />,
     },
     {
-      url: "/Tiktok",
+      url: "https://www.tiktok.com/@alphaads.project?_t=8pSwKW84qrA&_r=1",
       icon: <FaTiktok />,
     },
   ],

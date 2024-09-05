@@ -5,7 +5,6 @@ import Marque from "@/components/landing/components/Marque";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
 import Portofolio from "@/components/landing/Portofolio";
-import Pricing from "@/components/landing/Pricing";
 import Section1 from "@/components/landing/Section1";
 import Section2 from "@/components/landing/Section2";
 import Section3 from "@/components/landing/Section3";
@@ -47,8 +46,8 @@ export default function Home() {
       <About />
       <Section1 />
       <Section2 />
-      <div id="pricing"></div>
-      <Pricing />
+      {/* <div id="pricing"></div>
+      <Pricing /> */}
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
