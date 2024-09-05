@@ -153,31 +153,31 @@ export const PORTOFLIO = {
   items: [
     {
       image: "/assets/portofolio/porto_akas.webp",
-      url: "/logo",
+      url: "https://www.instagram.com/garment_akas/",
     },
     {
       image: "/assets/portofolio/porto_akasjendara.webp",
-      url: "/package",
+      url: "https://www.instagram.com/garment_akas/",
     },
     {
       image: "/assets/portofolio/porto_alphasentra.webp",
-      url: "/logo",
+      url: "https://www.instagram.com/alphapropertindo/",
     },
     {
       image: "/assets/portofolio/porto_easytax.webp",
-      url: "/package",
+      url: "https://www.instagram.com/easytaxsolusindo?igsh=amFlNjFmdTloZDh1",
     },
     {
       image: "/assets/portofolio/porto_oscarads.webp",
-      url: "/logo",
+      url: "https://www.instagram.com/oscar_advertising/",
     },
     {
       image: "/assets/portofolio/porto_profilemas.webp",
-      url: "/package",
+      url: "https://www.instagram.com/profilemaskonsultan/",
     },
     {
       image: "/assets/portofolio/porto_twsconsulting.webp",
-      url: "/package",
+      url: "https://www.instagram.com/gsi.business.consulting?igsh=dHhwc2FjMzFsajVs",
     },
   ],
 };
