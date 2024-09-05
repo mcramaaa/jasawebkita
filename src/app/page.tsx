@@ -4,6 +4,7 @@ import About from "@/components/landing/About";
 import Marque from "@/components/landing/components/Marque";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
+import Portofolio from "@/components/landing/Portofolio";
 import Pricing from "@/components/landing/Pricing";
 import Section1 from "@/components/landing/Section1";
 import Section2 from "@/components/landing/Section2";
@@ -15,8 +16,6 @@ import { useEffect } from "react";
 
 export default function Home() {
   const { section } = useSection();
-
-  console.log(section);
 
   const scrollToSection = (id: string) => {
     if (id === "home") {
@@ -49,9 +48,9 @@ export default function Home() {
       <div id="pricing"></div>
       <Pricing />
       <Section3 />
-
       <div id="testi"></div>
       <Testimoni />
+      <Portofolio />
       <Ending />
     </div>
   );

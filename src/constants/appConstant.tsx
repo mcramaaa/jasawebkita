@@ -2,6 +2,7 @@ import { BsGraphUpArrow, BsPatchCheck } from "react-icons/bs";
 import {
   FaFacebookF,
   FaInstagram,
+  FaTiktok,
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
@@ -138,6 +139,37 @@ export const PACKAGE = [
   },
 ];
 
+export const PORTOFLIO = [
+  {
+    image: "/assets/portofolio/porto_akas.webp",
+    url: "/logo",
+  },
+  {
+    image: "/assets/portofolio/porto_akasjendara.webp",
+    url: "/package",
+  },
+  {
+    image: "/assets/portofolio/porto_alphasentra.webp",
+    url: "/logo",
+  },
+  {
+    image: "/assets/portofolio/porto_easytax.webp",
+    url: "/package",
+  },
+  {
+    image: "/assets/portofolio/porto_oscarads.webp",
+    url: "/logo",
+  },
+  {
+    image: "/assets/portofolio/porto_profilemas.webp",
+    url: "/package",
+  },
+  {
+    image: "/assets/portofolio/porto_twsconsulting.webp",
+    url: "/package",
+  },
+];
+
 export const FOOTER = {
   open: "",
   email: "",
@@ -159,6 +191,10 @@ export const FOOTER = {
     {
       url: "/",
       icon: <FaWhatsapp />,
+    },
+    {
+      url: "/Tiktok",
+      icon: <FaTiktok />,
     },
   ],
 };
