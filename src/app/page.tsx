@@ -38,8 +38,12 @@ export default function Home() {
         id="home"
         className="bg-gradient-to-br from-brand-dark to-brand start-0"
       >
-        <Navbar />
-        <Hero />
+        <div className="z-40 absolute w-full">
+          <Navbar />
+        </div>
+        <div className="">
+          <Hero />
+        </div>
       </div>
       <Marque />
       <About />

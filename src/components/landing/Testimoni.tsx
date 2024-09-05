@@ -8,7 +8,7 @@ import { FaRegComments, FaStar } from "react-icons/fa6";
 export default function Testimoni() {
   const star = 5;
   return (
-    <div className="mt-16 px-4 lg:px-72 bg-brand-bone py-14 grid lg:grid-cols-3">
+    <div className="mt-16 px-4 lg:px-52 xl:px-72 bg-brand-bone py-14 grid lg:grid-cols-3">
       <div className="flex flex-col justify-center">
         <div className="text-7xl w-full justify-center items-center py-7 flex lg:justify-start text-brand">
           <FaRegComments />
@@ -38,7 +38,7 @@ export default function Testimoni() {
               key={i}
             >
               <div>
-                <p className="text-sm">{item.comment}</p>
+                <p className="text-sm text-center">{item.comment}</p>
               </div>
               <div className="absolute bottom-0 bg-brand-bone h-2/5 w-full flex flex-col items-center gap-2">
                 <Image

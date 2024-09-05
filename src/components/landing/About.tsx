@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="grid md:grid-cols-2 gap-3 lg:gap-10 justify-center items-center pt-32 mx-4 lg:mx-72">
-      <div className="flex items-center relative justify-center bg-gradient-to-t from-white  via-brand/10  to-white rounded-3xl">
+    <div className="grid md:grid-cols-2 gap-3 group lg:gap-10 justify-center items-center pt-32 mx-4 lg:mx-72">
+      <div className="flex items-center relative justify-center bg-gradient-to-t from-white  via-brand/10  to-white rounded-3xl overflow-hidden">
         <div className="w-3/4 rounded-xl relative aspect-square">
           <Image
             src={"/assets/about.png"}
-            className="object-cover"
+            className="object-cover group-hover:scale-110 duration-500"
             alt=""
             fill
           />

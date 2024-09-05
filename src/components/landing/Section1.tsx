@@ -24,7 +24,8 @@ export default function Section1() {
       <div>
         <div className="flex mx-4 mt-16 lg:mx-72 md:mt-24 lg:mt-48 flex-col gap-10">
           <div className="w-full flex flex-col items-center justify-center">
-            <h2 className="text-3xl group-hover:scale-110 duration-1000 w-fit md:text-4xl text-brand group-hover:text-brand-dark font-bold gap-3 font-varella text-center">
+            <p className="text-2xl md:text-3xl py-3">Lalu apa solusinya ?</p>
+            <h2 className="text-3xl group-hover:scale-110 font-montserrat duration-1000 w-fit md:text-4xl text-brand group-hover:text-brand-dark font-bold gap-3 font-varella text-center">
               Beralih{" "}
               <span className="font-light text-brand-dark">
                 dari Tradisional
