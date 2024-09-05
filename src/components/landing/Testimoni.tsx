@@ -42,7 +42,7 @@ export default function Testimoni() {
               </div>
               <div className="absolute bottom-0 bg-brand-bone h-2/5 w-full flex flex-col items-center gap-2">
                 <Image
-                  src={"/assets/testimoni/user.png"}
+                  src={item.img}
                   alt=""
                   height={90}
                   width={90}

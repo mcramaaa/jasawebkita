@@ -109,6 +109,7 @@ export const SECTION2 = {
 export const TESTI = [
   {
     label: "PT. AKAS Garment",
+    img: "/assets/testimoni/akas.webp",
     video:
       "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/view?usp=sharing",
     comment:
@@ -116,6 +117,7 @@ export const TESTI = [
   },
   {
     label: "Alpha Propertindo",
+    img: "/assets/testimoni/alphaproperti.webp",
     video:
       "https://drive.google.com/file/d/1PvwYOab36QXigk-CnUQ096d84KWqNyE7/view?usp=sharing",
     comment:
