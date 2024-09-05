@@ -1,5 +1,5 @@
 import { useButtonLoading } from "@/zustand/useButtonLoading";
-import { Spin } from "antd";
+// import { Spin } from "antd";
 import React, { ReactNode } from "react";
 
 interface IProps {
@@ -23,7 +23,7 @@ export default function Button(props: IProps) {
           : " bg-brand text-white"
       } px-2 md:px-6 py-2 text-xs font-semibold hover:shadow-md`}
     >
-      {isButtonLoading ? <Spin size="small" /> : children}
+      {isButtonLoading ? "Loading.." : children}
     </button>
   );
 }
