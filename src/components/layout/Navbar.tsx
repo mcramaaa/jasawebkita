@@ -76,7 +76,7 @@ export default function Navbar() {
         )}
         <div
           className={`${
-            isOpen ? "mt-0" : "-mt-80"
+            isOpen ? "mt-0" : "-mt-96"
           } bg-brand-dark/90 backdrop-blur-sm absolute  w-full flex flex-col px-5 justify-center gap-5 md:hidden text-white py-5 rounded-b-lg duration-300`}
         >
           {NAVMENU.map((list, i) => (
