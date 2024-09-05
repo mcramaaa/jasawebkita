@@ -5,8 +5,12 @@ import Accordion from "../accordion/Accordion";
 export default function Section2() {
   return (
     <div className="relative flex flex-col items-center mt-32 mx-4 lg:mx-20 xl:mx-32">
-      <h2 className="text-2xl duration-1000 w-fit md:text-4xl text-brand font-bold gap-3 font-varella text-center">
-        {SECTION2.label}
+      <h2 className="text-3xl flex-col md:flex-row font-montserrat md:text-4xl duration-1000 w-fit flex items-center text-brand font-bold gap-3 font-varella text-center">
+        Bayangkan!
+        <span className="font-normal text-2xl md:text-4xl">
+          {" "}
+          jika kamu bisa :{" "}
+        </span>
       </h2>
       <div className="flex justify-center mt-10 gap-10 flex-wrap">
         {SECTION2.value.map((item, i) => (

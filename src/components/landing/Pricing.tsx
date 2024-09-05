@@ -9,7 +9,7 @@ export default function Pricing() {
       <div className="flex mt-32 flex-col gap-10">
         <div className="w-full flex flex-col justify-center items-center">
           <h2 className="md:text-2xl text-xl gap-3 text-center">
-            Apa saja yang bisa{" "}
+            Apa yang{" "}
             <span className="font-bold text-brand-dark">kamu dapatkan ?</span>
           </h2>
           <div className="h-[2px] mt-2 group-hover:w-full w-0 duration-500 rounded-xl bg-brand"></div>

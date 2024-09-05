@@ -48,7 +48,7 @@ export const ABOUTVALUE = {
 
 export const SECTION1 = {
   label: "Beralih dari Tradisional ke Digital",
-  desc: "Mengapa Optimasi Sosial Media Begitu Penting untuk Bisnismu?",
+  desc: "Mengapa Optimasi Sosial Media Begitu Penting?",
   value: [
     {
       label: "Meningkatkan Visibilitas dan Jangkauan Pelanggan",
@@ -70,8 +70,8 @@ export const SECTION1 = {
 };
 
 export const SECTION2 = {
-  label: "Bayangkan Jika Kamu Bisa",
-  desc: "Bersama Alpha Project Semua masalah mengelola konten bisa diatasi, bikin bisnis kamu lebih dikenal, lebih mudah dicari, dan makin menguntungkan setiap hari.",
+  label: "Bayangkan! Jika Kamu Bisa :",
+  desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
   value: [
     {
       icon: <TbTargetArrow />,
@@ -103,16 +103,18 @@ export const SECTION2 = {
 
 export const TESTI = [
   {
-    label: "PT AKAS",
+    label: "PT. AKAS Garment",
     video:
       "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/view?usp=sharing",
-    comment: "lorem ipsum dolor sit amet, consectetur adip",
+    comment:
+      "Jadi semakin dikenal berkat Kontribusi dan support tim selama ini. Sosial media PT. Akas menjadi semakin  tertata, maju, dan menarik dari sebelumnya",
   },
   {
     label: "Alpha Propertindo",
     video:
       "https://drive.google.com/file/d/1PvwYOab36QXigk-CnUQ096d84KWqNyE7/view?usp=sharing",
-    comment: "lorem ipsum dolor sit amet, consectetur adip",
+    comment:
+      "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
   },
 ];
 
@@ -139,37 +141,40 @@ export const PACKAGE = [
   },
 ];
 
-export const PORTOFLIO = [
-  {
-    image: "/assets/portofolio/porto_akas.webp",
-    url: "/logo",
-  },
-  {
-    image: "/assets/portofolio/porto_akasjendara.webp",
-    url: "/package",
-  },
-  {
-    image: "/assets/portofolio/porto_alphasentra.webp",
-    url: "/logo",
-  },
-  {
-    image: "/assets/portofolio/porto_easytax.webp",
-    url: "/package",
-  },
-  {
-    image: "/assets/portofolio/porto_oscarads.webp",
-    url: "/logo",
-  },
-  {
-    image: "/assets/portofolio/porto_profilemas.webp",
-    url: "/package",
-  },
-  {
-    image: "/assets/portofolio/porto_twsconsulting.webp",
-    url: "/package",
-  },
-];
-
+export const PORTOFLIO = {
+  title: "Portofolio Kami",
+  desc: "Bukti nyata dari tangan-tangan terampil tim kami yang profesional. Menjadikan para business owner rela antri unntuk menggunakan jasa Alpha Project ",
+  items: [
+    {
+      image: "/assets/portofolio/porto_akas.webp",
+      url: "/logo",
+    },
+    {
+      image: "/assets/portofolio/porto_akasjendara.webp",
+      url: "/package",
+    },
+    {
+      image: "/assets/portofolio/porto_alphasentra.webp",
+      url: "/logo",
+    },
+    {
+      image: "/assets/portofolio/porto_easytax.webp",
+      url: "/package",
+    },
+    {
+      image: "/assets/portofolio/porto_oscarads.webp",
+      url: "/logo",
+    },
+    {
+      image: "/assets/portofolio/porto_profilemas.webp",
+      url: "/package",
+    },
+    {
+      image: "/assets/portofolio/porto_twsconsulting.webp",
+      url: "/package",
+    },
+  ],
+};
 export const FOOTER = {
   open: "",
   email: "",
