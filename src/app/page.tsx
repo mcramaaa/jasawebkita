@@ -41,9 +41,7 @@ export default function Home() {
         <div className="z-40 absolute w-full">
           <Navbar />
         </div>
-        <div className="">
-          <Hero />
-        </div>
+        <Hero />
       </div>
       <Marque />
       <About />
@@ -54,6 +52,7 @@ export default function Home() {
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
+      <div id="porto"></div>
       <Portofolio />
       <Ending />
     </div>

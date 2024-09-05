@@ -25,6 +25,11 @@ export const NAVMENU = [
     refKey: "testi",
   },
   {
+    value: "#Portofolio",
+    label: "Portofolio",
+    refKey: "porto",
+  },
+  {
     value: "/contact",
     label: "Contact",
     refKey: "contact",
