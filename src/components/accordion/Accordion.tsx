@@ -12,7 +12,7 @@ export default function Accordion(props: IProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className=" bg-white rounded-lg h-full duration-500 drop-shadow-lg w-80 lg:w-[400px] p-4">
+      <div className=" bg-brand text-white rounded-lg h-full duration-500 drop-shadow-lg w-80 lg:w-[400px] p-4">
         <button onClick={() => setIsOpen(!isOpen)} className="w-full">
           <div className="flex h-14 gap-4 items-center">
             <p className="text-3xl">{icon}</p>
@@ -26,9 +26,9 @@ export default function Accordion(props: IProps) {
           </div>
         </button>
         <div
-          className={`grid overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`grid overflow-hidden transition-all duration-300 ease-in-out bg-white text-black  ${
             isOpen
-              ? "grid-rows-[1fr] opacity-100 mt-3 py-3 border-t"
+              ? "grid-rows-[1fr] opacity-100 mt-3 py-3 px-3 border-t"
               : "grid-rows-[0fr] opacity-0"
           }`}
         >

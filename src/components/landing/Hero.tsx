@@ -29,6 +29,7 @@ export default function Hero() {
               <h2 className="text-lg lg:text-3xl mt-9 text-center text-white">
                 Mulai Naikin Omzet Tanpa Beban !!
               </h2>
+              
               <div className="flex mt-4 lg:mt-10 text-white lg:gap-10  items-center justify-end text-center mx-4 flex-col">
                 <Link
                   target="_blank"

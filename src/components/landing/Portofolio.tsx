@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Portofolio() {
   return (
-    <div className="bg-gradient-to-b from-brand-bone to-white py-10">
+    <div className="bg-gradient-to-b from-brand-bone to-white py-10 mt-32">
       <div className="flex flex-col text-center items-center mx-4 justify-center gap-4">
         {/* <BsStars className="text-3xl text-brand" /> */}
         <h2 className="text-center text-3xl lg:text-4xl font-bold font-montserrat text-brand">

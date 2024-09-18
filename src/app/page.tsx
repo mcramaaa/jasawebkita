@@ -42,17 +42,17 @@ export default function Home() {
         </div>
         <Hero />
       </div>
+      <Section2 />
       <Marque />
+      <Portofolio />
       <About />
       <Section1 />
-      <Section2 />
       {/* <div id="pricing"></div>
       <Pricing /> */}
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
       <div id="porto"></div>
-      <Portofolio />
       <Ending />
     </div>
   );
