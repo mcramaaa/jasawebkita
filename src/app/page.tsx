@@ -44,6 +44,7 @@ export default function Home() {
       </div>
       <Section2 />
       <Marque />
+      <div id="porto"></div>
       <Portofolio />
       <About />
       <Section1 />
@@ -52,7 +53,6 @@ export default function Home() {
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
-      <div id="porto"></div>
       <Ending />
     </div>
   );

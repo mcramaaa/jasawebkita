@@ -19,14 +19,14 @@ export const NAVMENU = [
   //   refKey: "pricing",
   // },
   {
-    value: "#Testimoni",
-    label: "Testimoni",
-    refKey: "testi",
-  },
-  {
     value: "#Portofolio",
     label: "Portofolio",
     refKey: "porto",
+  },
+  {
+    value: "#Testimoni",
+    label: "Testimoni",
+    refKey: "testi",
   },
   {
     value: "/contact",
@@ -35,18 +35,18 @@ export const NAVMENU = [
   },
 ];
 
-export const ABOUTMARQUEE = ", Kop, Map, Amplop, Stempel, Logo, Icon, Feed";
+export const ABOUTMARQUEE = " .Portofolio Client by Alpha Project";
 
 export const ABOUTVALUE = {
-  label: "Pernahkah kamu Merasa :",
+  // label: "Pernahkah Kamu Merasa :",
   value: [
+    "Boro-boro ngurus sosmed, ngurus bisnis sendiri aja masih keteteran",
     "Pernah coba bikin konten sendiri tapi hasilnya gak rame",
     "Sulit mencari ide kreatif dan menarik buat konten sosial media",
     "Kekurangan/gapunya tim buat ngurus sosial media",
     "Mau hire editor dan content creator tapi gajinya mahal",
     "Gaada waktu buat mikirin ide konten",
     "Pengen beli peralatan ngonten tapi harganya selangit",
-    "Boro-boro ngurus sosmed, ngurus bisnis sendiri aja masih keteteran",
   ],
 };
 
@@ -149,7 +149,10 @@ export const PACKAGE = [
 
 export const PORTOFLIO = {
   title: "Portofolio Kami",
-  desc: "Bukti nyata dari tangan-tangan terampil tim kami yang profesional. Menjadikan para business owner rela antri unntuk menggunakan jasa Alpha Project ",
+  desc: [
+    "Bukti nyata dari tangan-tangan terampil tim kami yang profesional.",
+    "Menjadikan para business owner rela antri untuk menggunakan jasa Alpha Project"
+  ],
   items: [
     {
       image: "/assets/portofolio/porto_akas.webp",
