@@ -20,7 +20,7 @@ export default function About() {
       </div>
       <div className="flex flex-col gap-2 justify-center">
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          <span className="font-bold">Pernahkah</span> Kamu Merasa :
+          <span className="font-bold text-brand-light">Pernahkah</span> Kamu Merasa :
         </h2>
         <ul className="flex flex-col gap-3">
           {ABOUTVALUE.value.map((value, i) => (

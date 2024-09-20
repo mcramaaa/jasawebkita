@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
+import Script from "next/script";
+import MetaPixel from "@/meta/MetaPixel";
 
 const inter = Comfortaa({ subsets: ["latin"], weight: "400" });
 
@@ -20,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>{children}</Provider>
+        <MetaPixel />
       </body>
     </html>
   );
