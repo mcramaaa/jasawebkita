@@ -35,6 +35,7 @@ export const NAVMENU = [
   },
 ];
 
+
 export const ABOUTMARQUEE = " .Portofolio Client by Alpha Project";
 
 export const ABOUTVALUE = {
