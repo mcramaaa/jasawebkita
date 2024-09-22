@@ -35,8 +35,22 @@ export const NAVMENU = [
   },
 ];
 
-
 export const ABOUTMARQUEE = " .Portofolio Client by Alpha Project";
+
+export const MEDIALIST = [
+  {
+    id : 1,
+    img : '/assets/slider/slider_head.webp'
+  },
+  {
+    id : 2,
+    img : '/assets/slider/slider_basic.webp'
+  },
+  {
+    id: 3,
+    img : '/assets/slider/slider_client.webp'
+  }
+]
 
 export const ABOUTVALUE = {
   // label: "Pernahkah Kamu Merasa :",

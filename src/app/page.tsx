@@ -2,6 +2,7 @@
 
 import About from "@/components/landing/About";
 import Marque from "@/components/landing/components/Marque";
+import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
 import Portofolio from "@/components/landing/Portofolio";
@@ -42,6 +43,7 @@ export default function Home() {
         </div>
         <Hero />
       </div>
+      <Media />
       <Section2 />
       <Marque />
       <div id="porto"></div>
