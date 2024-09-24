@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "dev-alpha-landing",
+      name: "prod-alpha-landing",
       script: "yarn",
       args: "start",
       cwd: "/var/www/whitelabel/alpha-landing",
