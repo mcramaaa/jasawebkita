@@ -13,7 +13,7 @@ export default function Portofolio() {
           {PORTOFLIO.title}
         </h2>
         {PORTOFLIO.desc.map((list, i) =>
-          <div key={i} className="text-lg lg:text-2xl ">
+          <div key={i} className="text-lg lg:text-2xl">
             {list}
           </div>
         )}

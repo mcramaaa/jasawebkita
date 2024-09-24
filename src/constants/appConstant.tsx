@@ -137,6 +137,15 @@ export const TESTI = [
     comment:
       "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
   },
+  {
+    label: "Profile Emas Konsultan",
+    img: "/assets/testimoni/profile_emas_konsultan.webp",
+    video:
+      "https://drive.google.com/file/d/1VX75j75Dx8KvJ9S_ZzmUYr7gT5t9wXfg/view?pli=1",
+    comment:
+      "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
+  }
+  
 ];
 
 export const PACKAGE = [

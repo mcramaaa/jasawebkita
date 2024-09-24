@@ -32,6 +32,7 @@ export default function Home() {
     scrollToSection(section);
     console.log("h");
   }, [section]);
+  
   return (
     <div className="relative">
       <div

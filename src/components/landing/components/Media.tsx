@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 export default function Media() {
   return (
 
-    <div className='  py-10 '>
+    <div className='py-10 '>
         <div className='flex flex-col text-center items-center justify-centerfont-bold'>
             <h1 className='font-bold text-3xl lg:text-5xl'>
                 Lorem, ipsum dolor.
