@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Section1() {
   return (
-    <div className="group bg-brand-bone  overflow-hidden relative mt-32">
+    <div className="group bg-brand-bone overflow-hidden relative mt-32">
       <Image
         src={"/bg.png"}
         className="object-cover group-hover:scale-125 duration-1000"
@@ -48,7 +48,7 @@ export default function Section1() {
               >
                 {i % 2 !== 1 ? (
                   <div className="flex gap-2 md:items-end flex-col">
-                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 lg:bg-gradient-to-l bg-gradient-to-r from-brand-dark to-brand lg:w-fit text-white font-bold  lg:text-xl">
+                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 lg:bg-gradient-to-l bg-gradient-to-r from-brand-dark to-brand lg:w-fit text-white font-bold lg:text-2xl">
                       {item.label}
                     </h4>
 
@@ -81,7 +81,7 @@ export default function Section1() {
               >
                 {i % 2 === 1 ? (
                   <div className="flex gap-2 flex-col">
-                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-xl">
+                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl">
                       {item.label}
                     </h4>
 
