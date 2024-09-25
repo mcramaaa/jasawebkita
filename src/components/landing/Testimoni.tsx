@@ -1,12 +1,22 @@
 import { TESTI } from "@/constants/appConstant";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaRegComments, FaStar } from "react-icons/fa6";
 
 export default function Testimoni() {
   const star = 5;
+  const router = useRouter();
+
+  const openNewTab = (url: string) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      router.push(url);
+      newWindow.focus();
+    }
+  };
+
   return (
     <div className="mt-16 px-4 lg:px-20 xl:px-32 bg-brand-bone py-14 grid lg:grid-cols-3">
       <div className="flex flex-col justify-center">
@@ -63,9 +73,13 @@ export default function Testimoni() {
                     ))}
                   </div>
                 </div>
-                <Link href={item.video} target="_blank" className="text-sm">
+
+                <button onClick={() => openNewTab(item.video)}>
+                  lihat video
+                </button>
+                {/* <Link href={item.video} target="_blank" className="text-sm">
                   Lihat video
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

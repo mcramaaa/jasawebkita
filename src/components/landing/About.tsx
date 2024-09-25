@@ -19,8 +19,8 @@ export default function About() {
         <div className="bg-gradient-to-b from-white/0 to-white h-1/3 w-full absolute bottom-0"></div>
       </div>
       <div className="flex flex-col gap-2 justify-center">
-        <h2 className="font-bold text-xl md:text-2xl lg:text-3xl">
-          {ABOUTVALUE.label}
+        <h2 className="text-xl md:text-2xl lg:text-3xl">
+          <span className="font-bold text-brand-light">Pernahkah</span> Kamu Merasa :
         </h2>
         <ul className="flex flex-col gap-3">
           {ABOUTVALUE.value.map((value, i) => (

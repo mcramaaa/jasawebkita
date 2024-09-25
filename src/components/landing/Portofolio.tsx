@@ -6,16 +6,22 @@ import Marquee from "react-fast-marquee";
 
 export default function Portofolio() {
   return (
-    <div className="bg-gradient-to-b from-brand-bone to-white py-10">
-      <div className="flex flex-col text-center items-center mx-4 justify-center gap-4">
+    <div className="bg-gradient-to-b from-brand-bone to-white py-10 mt-32">
+      <div className="flex flex-col text-center items-center mx-4 justify-center ">
         {/* <BsStars className="text-3xl text-brand" /> */}
-        <h2 className="text-center text-3xl lg:text-4xl font-bold font-montserrat text-brand">
+        <h2 className="text-center text-3xl lg:text-5xl font-bold font-montserrat text-brand mb-5">
           {PORTOFLIO.title}
         </h2>
-        <p>{PORTOFLIO.desc}</p>
+        {PORTOFLIO.desc.map((list, i) =>
+          <div key={i} className="text-lg lg:text-2xl">
+            {list}
+          </div>
+        )}
+        {/* <p>{PORTOFLIO.desc}</p> */}
         {/* <BsStars className="text-3xl text-brand" /> */}
       </div>
       <Marquee
+        direction="right"
         speed={60}
         autoFill
         className="h-full py-10 relative overflow-hidden"

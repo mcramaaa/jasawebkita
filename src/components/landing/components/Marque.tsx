@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Marque() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full mt-32">
       <div className="w-1/6 z-10 h-full absolute left-0 top-0 bg-gradient-to-r from-white to-white/0"></div>
       <Marquee
         speed={60}

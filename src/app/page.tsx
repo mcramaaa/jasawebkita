@@ -2,6 +2,7 @@
 
 import About from "@/components/landing/About";
 import Marque from "@/components/landing/components/Marque";
+import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
 import Portofolio from "@/components/landing/Portofolio";
@@ -31,6 +32,7 @@ export default function Home() {
     scrollToSection(section);
     console.log("h");
   }, [section]);
+  
   return (
     <div className="relative">
       <div
@@ -42,17 +44,18 @@ export default function Home() {
         </div>
         <Hero />
       </div>
+      <Media />
+      <Section2 />
       <Marque />
+      <div id="porto"></div>
+      <Portofolio />
       <About />
       <Section1 />
-      <Section2 />
       {/* <div id="pricing"></div>
       <Pricing /> */}
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
-      <div id="porto"></div>
-      <Portofolio />
       <Ending />
     </div>
   );
