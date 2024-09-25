@@ -12,10 +12,9 @@ export default function Media() {
   return (
     <div className="py-10">
       <div className="flex flex-col text-center items-center justify-centerfont-bold">
-        <h1 className="font-bold text-3xl lg:text-5xl">Lorem, ipsum dolor.</h1>
+        <h1 className="font-bold text-3xl lg:text-5xl">Bikin Konten Mahal?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          ratione!
+          Alpha Project bisa bikin konten yang bikin dompetmu tetap tebal
         </p>
       </div>
       {/* IMAGE SLIDING */}
