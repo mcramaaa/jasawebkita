@@ -1,7 +1,5 @@
 import { TESTI } from "@/constants/appConstant";
-import { url } from "inspector";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -11,14 +9,14 @@ export default function Testimoni() {
   const star = 5;
   const router = useRouter();
 
-  const openNewTab = (url:string) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if(newWindow) {
-      router.push(url)
-      newWindow.focus()
+  const openNewTab = (url: string) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      router.push(url);
+      newWindow.focus();
     }
-  }
-  
+  };
+
   return (
     <div className="mt-16 px-4 lg:px-20 xl:px-32 bg-brand-bone py-14 grid lg:grid-cols-3">
       <div className="flex flex-col justify-center">

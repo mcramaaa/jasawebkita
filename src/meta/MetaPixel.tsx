@@ -1,13 +1,10 @@
-import React from 'react'
-import Script from 'next/script'
+import React from "react";
+import Script from "next/script";
 
 export default function MetaPixel() {
   return (
     <>
-      <Script
-        id="facebook-pixel"
-        strategy="afterInteractive"
-          >
+      <Script id="facebook-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,14 +18,14 @@ export default function MetaPixel() {
           fbq('track', 'PageView');
         `}
       </Script>
-      <noscript>
+      {/* <noscript>
         <img
           height="1"
           width="1"
           style={{ display: "none" }}
           src={`https://www.facebook.com/tr?id=248239781718151&ev=PageView& noscript=1`}
         />
-      </noscript>
+      </noscript> */}
     </>
-  )
+  );
 }
