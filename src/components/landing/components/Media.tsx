@@ -4,13 +4,15 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
-import 'swiper/css/pagination'
 
 
 export default function Media() {
+  
+  const SWIPER_SIZE = 'w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[600px] xl:h-[700px]'
+  
   return (
 
-    <div className='py-10 '>
+    <div className='py-10'>
         <div className='flex flex-col text-center items-center justify-centerfont-bold'>
             <h1 className='font-bold text-3xl lg:text-5xl'>
                 Lorem, ipsum dolor.
@@ -24,12 +26,11 @@ export default function Media() {
               <Swiper
                 spaceBetween={20}
                 centeredSlides={true}
-                autoplay={{delay:3000, disableOnInteraction:false}}
+                autoplay={{delay:2500, disableOnInteraction:false}}
                 speed={2000}
                 grabCursor={true}
-                pagination={{type:'custom'}}
                 modules={[Autoplay, Pagination, Pagination]}
-                className='w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[600px] xl:h-[700px]'
+                className={SWIPER_SIZE}
               >
                 {MEDIALIST.map((item) => (
                   <SwiperSlide key={item.id} className='relative w-full h-full aspect-square '>
@@ -38,9 +39,8 @@ export default function Media() {
                       alt={''} 
                       fill 
                       sizes="(max-width: 640px) 100vh, (max-width: 768px) 80vh, 70vh"
-                      style={{objectFit: 'contain'}}
                       priority
-                      className='hover:scale-105 duration-300'
+                      className='object-contain hover:scale-105 duration-300'
                     />
                   </SwiperSlide>
                 ))}
