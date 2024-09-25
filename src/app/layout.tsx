@@ -47,7 +47,6 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Provider>{children}</Provider>
-        {/* <MetaPixel /> */}
       </body>
     </html>
   );
