@@ -70,20 +70,20 @@ export const SECTION1 = {
   desc: "Mengapa Optimasi Sosial Media Begitu Penting?",
   value: [
     {
-      label: "Meningkatkan Visibilitas dan Jangkauan Pelanggan",
-      desc: "Di era digital, banyak orang menghabiskan waktu di berbagai platform media sosial seperti Instagram, Facebook, dan TikTok. Dengan optimasi sosial media, kamu dapat menjangkau audiens yang jauh lebih luas tanpa batasan ruang dan waktu.",
+      label:"Jangkauan Pelanggan Semakin Meningkat",
+      desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital."
     },
     {
-      label: "Membangun Brand Awareness",
-      desc: "Sosial media dapat memperkenalkan dan memperkuat brand bisnismu kepada audiens. Dengan strategi konten yang efektif, kamu bisa menciptakan kesan yang unik serta membangun brand awareness yang kuat sehingga bisnismu akan lebih dikenal oleh audiens.",
+      label:"Brand-mu Semakin Terkenal",
+      desc: "Brand kamu bisa semakin dikenal dan diingat banyak orang dengan membuat konten yang berkesan dan unik.",
     },
     {
-      label: "Berinteraksi Langsung dengan Pelanggan",
-      desc: "Kamu dapat berinteraksi langsung dengan pelanggan, hal ini bisa berupa memberikan feedback, mengajukan pertanyaan, atau berbagi pengalaman dengan mereka. Membangun interaksi dengan pelanggan dapat meningkatkan loyalitas audiens terhadap brand/bisnis mu.",
+      label:"Meningkatkan Kedekatan dengan Pelanggan",
+      desc: "Berinteraksi dengan pelanggan di sosial media dapat meningkatkan loyalitas dan kedekatan emosional dengan brandmu.",
     },
     {
-      label: "Meningkatkan Kredibilitas dan Kepercayaan",
-      desc: "Pelanggan cenderung lebih mempercayai brand yang mereka lihat aktif dan transparan di media sosial, terutama jika brand tersebut memiliki ulasan positif, testimoni, dan engagement yang baik.",
+      label:"Kredibilitas dan Kepercayaan Meningkat",
+      desc: "Brand yang aktif dan memiliki ulasan yang baik di sosial media cenderung lebih diminati oleh pelanggan.",
     },
   ],
 };
