@@ -23,7 +23,6 @@ export default function Portofolio() {
       <Marquee
         direction="right"
         speed={60}
-        pauseOnHover
         autoFill
         className="h-full py-10 relative overflow-hidden"
       >
