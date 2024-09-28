@@ -9,12 +9,28 @@ export default function Testimoni() {
   const star = 5;
   const router = useRouter();
 
+  const isSafari =  () : boolean => {
+    const userAgent = navigator.userAgent
+    return userAgent.includes("Safari") && !userAgent.includes("Chrome") && !userAgent.includes("Edge")
+  }
+
   const openNewTab = (url: string) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) {
-      router.push(url);
-      newWindow.focus();
+    
+    if(isSafari()){
+      // window.open(url, '_blank',"noopener,noreferrer")
+      router.push(url)
+
+    } else if(newWindow){
+        newWindow.focus()
     }
+
+    // if (newWindow) {
+      
+    //   router.push(url);
+    //   newWindow.focus();
+    // }
+    
   };
 
   return (

@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <div className="bg-gradient-to-b from-white/0 to-white h-1/3 w-full absolute bottom-0"></div>
       </div>
-      <div className="flex flex-col gap-2 justify-center">
+      <div className="flex flex-col gap-2 justify-center font-montserrat">
         <h2 className="text-xl md:text-2xl lg:text-3xl">
           <span className="font-bold text-brand-light">Pernahkah</span> Kamu Merasa :
         </h2>

@@ -37,23 +37,25 @@ export default function Home() {
     <div className="relative">
       <div
         id="home"
-        className="bg-gradient-to-br from-brand-dark to-brand start-0"
+        className="bg-gradient-to-br from-brand-dark to-brand start-0 rounded-b-3xl"
       >
         <div className="z-40 absolute w-full">
           <Navbar />
         </div>
         <Hero />
       </div>
+
       <Media />
       <Section2 />
       <Marque />
-      <div id="porto"></div>
-      <Portofolio />
+      
       <About />
       <Section1 />
       {/* <div id="pricing"></div>
       <Pricing /> */}
       <Section3 />
+      <div id="porto"></div>
+      <Portofolio />
       <div id="testi"></div>
       <Testimoni />
       <Ending />

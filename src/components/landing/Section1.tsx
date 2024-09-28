@@ -4,14 +4,14 @@ import React from "react";
 
 export default function Section1() {
   return (
-    <div className="group bg-brand-bone overflow-hidden relative mt-32">
+    <div className="group bg-brand-bone overflow-hidden relative mt-32 pb-16 rounded-[3.125rem] ">
       <Image
         src={"/bg.png"}
         className="object-cover group-hover:scale-125 duration-1000"
         alt=""
         fill
       />
-      <div className="z-20 -top-1 absolute rotate-180 w-full">
+      {/* <div className="z-20 -top-1 absolute rotate-180 w-full">
         <div className="relative w-full aspect-[9/1]">
           <Image
             alt=""
@@ -20,9 +20,9 @@ export default function Section1() {
             src={"/shape.svg"}
           />
         </div>
-      </div>
+      </div> */}
       <div>
-        <div className="flex mx-4 mt-16 lg:mx-20 md:mt-24 lg:mt-48 flex-col gap-10">
+        <div className="flex mx-4 mt-16 lg:mx-20 md:mt-24 lg:mt-20 flex-col gap-10">
           <div className="w-full flex flex-col items-center justify-center">
             <p className="text-2xl md:text-3xl py-3">Lalu apa solusinya ?</p>
             <h2 className="text-3xl group-hover:scale-110 font-montserrat duration-1000 w-fit md:text-4xl text-brand group-hover:text-brand-dark font-bold gap-3 font-varella text-center">
@@ -35,30 +35,35 @@ export default function Section1() {
           </div>
         </div>
         <div className="mt-10 z-30">
+
           {SECTION1.value.map((item, i) => (
             <div
               key={i}
-              className="grid mx-4 lg:mx-20 grid-cols-1 md:grid-cols-11 items-center text-brand-dark justify-center"
+              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-11 items-center text-brand-dark justify-center"
             >
-              {/* LEFT */}
+              {/* LEFT*/}
               <div
                 className={`${
-                  i % 2 === 1 && "hidden md:block"
-                } md:text-end pb-5 col-span-5 h-full w-full`}
+                  i % 2 !== 1 ? "order-1 md:order-1" : "order-2"
+                } col-span-5 h-full w-full flex items-center justify-center`}
               >
-                {i % 2 !== 1 ? (
-                  <div className="flex gap-2 md:items-end flex-col">
+                {i % 2 === 1 ? (
+                  <div className="flex gap-2 md:items-start  flex-col">
                     <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 lg:bg-gradient-to-l bg-gradient-to-r from-brand-dark to-brand lg:w-fit text-white font-bold lg:text-2xl">
                       {item.label}
                     </h4>
-
                     <p className="text-sm md:text-base">{item.desc}</p>
                   </div>
-                ) : null}
+                )  : (
+                  <div className="w-80 h-96 relative object-contain flex justify-center">
+                    <Image src={item.image} alt="" fill className="z-20" />
+                    <div className="absolute w-full h-52 mt-44 bg-white  z-10" style={{borderRadius:"20px"}} />
+                  </div>
+                )}
               </div>
 
               {/* MID */}
-              <div className="w-full  h-full hidden md:flex flex-col items-center">
+              {/* <div className="w-full  h-full hidden md:flex flex-col items-center">
                 <div
                   className={`grid place-items-center ${
                     i !== SECTION1.value.length - 1 ? "h-[50px]" : "h-[40px]"
@@ -71,29 +76,35 @@ export default function Section1() {
                 {i !== SECTION1.value.length - 1 && (
                   <div className="w-[3px] h-full bg-brand"></div>
                 )}
-              </div>
+              </div> */}
 
               {/* RIGHT */}
               <div
                 className={`${
-                  i % 2 !== 1 && "hidden"
-                } pb-5 col-span-5  md:text-start w-full h-full`}
+                  i % 2 === 1 ? "order-1 md:order-2" : "order-1"
+                } col-span-5 h-full w-full flex items-center justify-center `}
               >
-                {i % 2 === 1 ? (
-                  <div className="flex gap-2 flex-col">
-                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl">
+                {i % 2 !== 1 ? (
+                  <div className="flex gap-2 flex-col ">
+                
+                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl ">
                       {item.label}
                     </h4>
 
                     <p className="text-sm md:text-base">{item.desc}</p>
                   </div>
-                ) : null}
+                ) : (
+                  <div className="w-80 h-96 object-contain relative ">
+                     <div className="absolute w-full h-52 mt-44 bg-white  z-10" style={{borderRadius:"20px"}} />
+                      <Image src={item.image} alt="" fill className="z-20"/>
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="z-20 top-0 w-full">
+      {/* <div className="z-20 top-0 w-full">
         <div className="relative w-full aspect-[9/1]">
           <Image
             alt=""
@@ -102,7 +113,7 @@ export default function Section1() {
             src={"/shape.svg"}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

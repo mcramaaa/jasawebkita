@@ -18,15 +18,16 @@ export const NAVMENU = [
   //   label: "Pricing",
   //   refKey: "pricing",
   // },
-  {
-    value: "#Portofolio",
-    label: "Portofolio",
-    refKey: "porto",
-  },
+  
   {
     value: "#Testimoni",
     label: "Testimoni",
     refKey: "testi",
+  },
+  {
+    value: "#Portofolio",
+    label: "Portofolio",
+    refKey: "porto",
   },
   {
     value: "/contact",
@@ -71,19 +72,23 @@ export const SECTION1 = {
   value: [
     {
       label:"Jangkauan Pelanggan Semakin Meningkat",
-      desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital."
+      desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital.",
+      image:"/assets/section1/1.webp"
     },
     {
       label:"Brand-mu Semakin Terkenal",
       desc: "Brand kamu bisa semakin dikenal dan diingat banyak orang dengan membuat konten yang berkesan dan unik.",
+      image:"/assets/section1/5.webp"
     },
     {
       label:"Meningkatkan Kedekatan dengan Pelanggan",
       desc: "Berinteraksi dengan pelanggan di sosial media dapat meningkatkan loyalitas dan kedekatan emosional dengan brandmu.",
+      image:"/assets/section1/3.webp"
     },
     {
       label:"Kredibilitas dan Kepercayaan Meningkat",
       desc: "Brand yang aktif dan memiliki ulasan yang baik di sosial media cenderung lebih diminati oleh pelanggan.",
+      image:"/assets/section1/2.webp"
     },
   ],
 };
