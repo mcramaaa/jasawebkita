@@ -2,10 +2,9 @@ import React from "react";
 
 export default function Section3() {
   return (
-    <div className="relative ">
-      <div className="absolute mt-64 inset-0 bg-brand-bone h-1/2 rounded-t-3xl" aria-hidden="true" />
-
-      <div className="relative px-4 mx-32 py-32 mt-16 shadow-2xl bg-white">
+    <div className="relative bg-brand-bone rounded-t-3xl">
+      <div className="absolute inset-x-0 bg-white h-1/2 rounded-t-3xl" aria-hidden="true" />
+      <div className="relative px-4 mx-4 lg:mx-32 py-32 mt-16 shadow-2xl bg-white rounded-[3.125rem]">
         <div className="flex flex-col justify-center items-center text-center">
           <h2 className="flex-col flex text-2xl lg:text-5xl text-brand-dark font-montserrat ">
             Slot Terbatas Untuk{" "}
