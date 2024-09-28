@@ -52,12 +52,13 @@ export default function Home() {
       <About />
       <Section1 />
       {/* <div id="pricing"></div>
-      <Pricing /> */}
-      <Section3 />
+      <Pricing /> */}      
       <div id="porto"></div>
       <Portofolio />
+      <Section3 />
       <div id="testi"></div>
       <Testimoni />
+
       <Ending />
     </div>
   );
