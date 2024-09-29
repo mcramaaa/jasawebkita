@@ -16,7 +16,7 @@ export default function About() {
         <div className="flex items-center relative justify-center ">
           <div className="w-3/4 rounded-xl relative aspect-square z-10">
             <Image
-              src={"/assets/about.png"}
+              src={"/assets/1.png"}
               className="object-cover group-hover:scale-110 duration-500"
               alt=""
               fill
