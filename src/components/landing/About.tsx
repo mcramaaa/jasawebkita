@@ -16,7 +16,7 @@ export default function About() {
         <div className="flex items-center relative justify-center ">
           <div className="w-3/4 rounded-xl relative aspect-square z-10">
             <Image
-              src={"/assets/about.png"}
+              src={"/assets/1.png"}
               className="object-cover group-hover:scale-110 duration-500"
               alt=""
               fill
@@ -29,7 +29,7 @@ export default function About() {
             {ABOUTVALUE.value.map((value, i) => (
               <li
                 key={i}
-                className="flex text-xs lg:items-center md:text-sm lg:text-lg gap-2"
+                className="flex text-xs lg:items-center md:text-sm lg:text-sm gap-2"
               >
                 <LuCheckCircle className="text-brand" />
                 <p >{value}</p>
