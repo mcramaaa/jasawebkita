@@ -23,8 +23,8 @@ export default function Section1() {
       </div> */}
       <div>
         <div className="flex mx-4 mt-16 lg:mx-20 md:mt-24 lg:mt-20 flex-col gap-10">
-          <div className="w-full flex flex-col items-center justify-center">
-            <p className="text-2xl md:text-3xl py-3">Lalu apa solusinya ?</p>
+          <div className="w-full flex flex-col items-center  justify-center">
+            <p className="text-2xl md:text-3xl py-3 font-montserrat font-bold text-brand">Lalu apa solusinya ?</p>
             <h2 className="text-3xl group-hover:scale-110 font-montserrat duration-1000 w-fit md:text-4xl text-brand group-hover:text-brand-dark font-bold gap-3 font-varella text-center">
               Beralih{" "}
               <span className="font-light text-brand-dark">
@@ -57,7 +57,7 @@ export default function Section1() {
                 )  : (
                   <div className="w-80 h-96 relative object-contain flex justify-center">
                     <Image src={item.image} alt="" fill className="z-20" />
-                    <div className="absolute w-full h-52 mt-44 bg-white  z-10" style={{borderRadius:"20px"}} />
+                    <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
                   </div>
                 )}
               </div>
@@ -95,8 +95,8 @@ export default function Section1() {
                   </div>
                 ) : (
                   <div className="w-80 h-96 object-contain relative ">
-                     <div className="absolute w-full h-52 mt-44 bg-white  z-10" style={{borderRadius:"20px"}} />
                       <Image src={item.image} alt="" fill className="z-20"/>
+                      <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
                   </div>
                 )}
               </div>

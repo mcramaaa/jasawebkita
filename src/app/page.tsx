@@ -48,10 +48,10 @@ export default function Home() {
       </div>
 
       <Media />
-      <Section2 />
       <Marque />
       
       <About />
+      <Section2 />
       <Section1 />
       {/* <div id="pricing"></div>
       <Pricing /> */}   

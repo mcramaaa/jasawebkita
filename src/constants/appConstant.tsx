@@ -152,7 +152,7 @@ export const CLIENTLIST = [
 
 export const SECTION2 = {
   label: "Bayangkan! Jika Kamu Bisa :",
-  desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
+  // desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
   value: [
     {
       icon: <TbTargetArrow />,

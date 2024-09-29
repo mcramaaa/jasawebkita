@@ -31,11 +31,11 @@ export default function Footer() {
           <TfiHandPointRight className="text-8xl" />
           <div>
             <p className="text-sm lg:text-base text-justify">
-              Kalo kamu UMKM atau pengusaha pemula yang mau dibantu dalam
+              Kalo kamu <span className="font-bold">UMKM</span> atau pengusaha pemula yang mau dibantu dalam
               optimasi usaha, kamu bisa hubungi kami untuk bantu jemput
               kesuksesan pertama mu
             </p>
-            <p className="font-bold">Hubungi kami !</p>
+            <p className="font-bold text-yellow-400">Hubungi kami !</p>
           </div>
         </div>
         <div className="order-first md:hidden">
