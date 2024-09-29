@@ -11,14 +11,14 @@ export default function Footer() {
 
   return (
     <div className="relative bg-gradient-to-l from-brand-dark to-brand">
-      <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
+      {/* <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
         <Image
           alt=""
           className="bottom-0 absolute object-cover"
           fill
           src={"/shape.svg"}
         />
-      </div>
+      </div> */}
       <div className=" gap-6 px-4 lg:px-40 py-10 text-white grid md:grid-cols-2">
         <div>
           <h2 className="flex flex-col font-montserrat font-bold text-3xl">

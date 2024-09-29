@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/landing/About";
+import Client from "@/components/landing/Client";
 import Marque from "@/components/landing/components/Marque";
 import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
@@ -52,7 +53,8 @@ export default function Home() {
       <About />
       <Section1 />
       {/* <div id="pricing"></div>
-      <Pricing /> */}      
+      <Pricing /> */}   
+      <Client />   
       <div id="porto"></div>
       <Portofolio />
       <Section3 />

@@ -93,6 +93,30 @@ export const SECTION1 = {
   ],
 };
 
+export const CLIENTLIST = [
+  {
+    img:"/assets/client/AlphaProperti.webp"
+  },
+  {
+    img:"/assets/client/ElangBhumi.webp"
+  },
+  {
+    img:"/assets/client/FortunaBadja.webp"
+  },
+  {
+    img:"/assets/client/OliviaStuff.webp"
+  },
+  {
+    img:"/assets/client/OscarADS.webp"
+  },
+  {
+    img:"/assets/client/ProfilEmas.webp"
+  },
+  {
+    img:"/assets/client/TWSLaw.webp"
+  },
+]
+
 export const SECTION2 = {
   label: "Bayangkan! Jika Kamu Bisa :",
   desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
