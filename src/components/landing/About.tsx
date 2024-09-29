@@ -32,7 +32,7 @@ export default function About() {
                 className="flex text-xs lg:items-center md:text-sm lg:text-lg gap-2"
               >
                 <LuCheckCircle className="text-brand" />
-                <p className="">{value}</p>
+                <p className="font-bold">{value}</p>
               </li>
             ))}
           </ul>
