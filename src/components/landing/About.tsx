@@ -29,7 +29,7 @@ export default function About() {
             {ABOUTVALUE.value.map((value, i) => (
               <li
                 key={i}
-                className="flex text-xs lg:items-center md:text-sm lg:text-lg gap-2"
+                className="flex text-xs lg:items-center md:text-sm lg:text-sm gap-2"
               >
                 <LuCheckCircle className="text-brand" />
                 <p >{value}</p>
