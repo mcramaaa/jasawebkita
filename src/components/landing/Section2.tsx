@@ -12,7 +12,7 @@ export default function Section2() {
           jika kamu bisa :{" "}
         </span>
       </h2>
-      <div className="flex justify-center mt-10 gap-10 flex-wrap">
+      <div className="flex justify-center mt-20 gap-10 flex-wrap">
         {SECTION2.value.map((item, i) => (
           <Accordion
             key={i}
@@ -22,7 +22,7 @@ export default function Section2() {
           />
         ))}
       </div>
-      <p className="mt-16 text-center text-lg lg:text-2xl">{SECTION2.desc}</p>
+      <p className="mt-32 text-center mx-32  text-lg lg:text-2xl text-brand font-montserrat"><span className="font-bold ">Bersama Alpha Project</span> semua masalah pengelolaan konten bisa kami atasi, bikin <span className="font-bold ">bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!</span></p>
     </div>
   );
 }

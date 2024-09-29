@@ -7,18 +7,20 @@ import "swiper/css";
 
 export default function Media() {
   const SWIPER_SIZE =
-    "w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[600px] xl:h-[700px]";
+    "w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[600px] xl:h-[600px]";
 
   return (
-    <div className="py-10">
-      <div className="flex flex-col text-center items-center justify-centerfont-bold">
-        <h1 className="font-bold text-3xl lg:text-5xl">Bikin Konten Mahal?</h1>
-        <p>
+    <div className="py-10 mt-20 group">
+      <div className="flex flex-col text-center items-center justify-centerfont-bold gap-4">
+        <h1 className="font-bold font-montserrat text-3xl lg:text-5xl">
+          Bikin Konten Mahal?
+        </h1>
+        <p className="text-2xl text-brand-blue">
           Alpha Project bisa bikin konten yang bikin dompetmu tetap tebal
         </p>
       </div>
       {/* IMAGE SLIDING */}
-      <div className="px-4 sm:px-6 lg:px-8 mt-10 sm:mt-16 lg:mt-20">
+      <div className="px-4 sm:px-6 lg:px-8 mt-10 sm:mt-16 ">
         <Swiper
           spaceBetween={20}
           centeredSlides={true}

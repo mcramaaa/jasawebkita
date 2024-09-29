@@ -6,33 +6,37 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="grid md:grid-cols-2 gap-3 group lg:gap-10 justify-center items-center pt-32 mx-4 lg:mx-20 xl:mx-72">
-      <div className="flex items-center relative justify-center bg-gradient-to-t from-white  via-brand/10  to-white rounded-3xl overflow-hidden">
-        <div className="w-3/4 rounded-xl relative aspect-square">
-          <Image
-            src={"/assets/about.png"}
-            className="object-cover group-hover:scale-110 duration-500"
-            alt=""
-            fill
-          />
-        </div>
-        <div className="bg-gradient-to-b from-white/0 to-white h-1/3 w-full absolute bottom-0"></div>
-      </div>
-      <div className="flex flex-col gap-2 justify-center">
-        <h2 className="text-xl md:text-2xl lg:text-3xl">
-          <span className="font-bold text-brand-light">Pernahkah</span> Kamu Merasa :
+    <div className="relative bg-brand-bone" >
+      <div className="items-center justify-center text-center mt-16">
+        <h2 className="text-xl md:text-2xl lg:text-5xl pt-16 font-montserrat text-brand">
+          Pernahkah <span className="font-bold ">Kamu Merasa :</span>
         </h2>
-        <ul className="flex flex-col gap-3">
-          {ABOUTVALUE.value.map((value, i) => (
-            <li
-              key={i}
-              className="flex text-xs lg:items-center lg:text-sm gap-2"
-            >
-              <LuCheckCircle className="text-brand" />
-              <p>{value}</p>
-            </li>
-          ))}
-        </ul>
+      </div>
+      <div className="grid md:grid-cols-2 gap-3 group lg:gap-10 justify-center items-center pt-8 pb-16 mx-4 lg:mx-20 xl:mx-72">
+        <div className="flex items-center relative justify-center ">
+          <div className="w-3/4 rounded-xl relative aspect-square z-10">
+            <Image
+              src={"/assets/about.png"}
+              className="object-cover group-hover:scale-110 duration-500"
+              alt=""
+              fill
+            />
+          </div>
+          <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
+        </div>
+        <div className="flex flex-col gap-2 justify-center font-montserrat">
+          <ul className="flex flex-col gap-4">
+            {ABOUTVALUE.value.map((value, i) => (
+              <li
+                key={i}
+                className="flex text-xs lg:items-center md:text-sm lg:text-lg gap-2"
+              >
+                <LuCheckCircle className="text-brand" />
+                <p className="">{value}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="px-3 relative  overflow-hidden w-full z-50 lg:px-52 py-2 grid grid-flow-col items-center">
+      <div className="px-3 relative overflow-hidden w-full z-50 lg:px-52 py-5 grid grid-flow-col items-center">
         <Link
           href={"/"}
           onClick={() => {

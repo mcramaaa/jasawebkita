@@ -11,14 +11,14 @@ export default function Footer() {
 
   return (
     <div className="relative bg-gradient-to-l from-brand-dark to-brand">
-      <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
+      {/* <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
         <Image
           alt=""
           className="bottom-0 absolute object-cover"
           fill
           src={"/shape.svg"}
         />
-      </div>
+      </div> */}
       <div className=" gap-6 px-4 lg:px-40 py-10 text-white grid md:grid-cols-2">
         <div>
           <h2 className="flex flex-col font-montserrat font-bold text-3xl">
@@ -31,11 +31,11 @@ export default function Footer() {
           <TfiHandPointRight className="text-8xl" />
           <div>
             <p className="text-sm lg:text-base text-justify">
-              Kalo kamu UMKM atau pengusaha pemula yang mau dibantu dalam
+              Kalo kamu <span className="font-bold">UMKM</span> atau pengusaha pemula yang mau dibantu dalam
               optimasi usaha, kamu bisa hubungi kami untuk bantu jemput
               kesuksesan pertama mu
             </p>
-            <p className="font-bold">Hubungi kami !</p>
+            <p className="font-bold text-yellow-400">Hubungi kami !</p>
           </div>
         </div>
         <div className="order-first md:hidden">

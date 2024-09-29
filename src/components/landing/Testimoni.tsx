@@ -9,16 +9,33 @@ export default function Testimoni() {
   const star = 5;
   const router = useRouter();
 
+  const isSafari =  () : boolean => {
+    const userAgent = navigator.userAgent
+    return userAgent.includes("Safari") && !userAgent.includes("Chrome") && !userAgent.includes("Edge")
+  }
+
   const openNewTab = (url: string) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) {
-      router.push(url);
-      newWindow.focus();
+    
+    if(isSafari()){
+      // window.open(url, '_blank',"noopener,noreferrer")
+      router.push(url)
+
+    } else if(newWindow){
+        newWindow.focus()
     }
+
+    // if (newWindow) {
+      
+    //   router.push(url);
+    //   newWindow.focus();
+    // }
+    
   };
 
   return (
-    <div className="mt-16 px-4 lg:px-20 xl:px-32 bg-brand-bone py-14 grid lg:grid-cols-3">
+    
+    <div className=" px-4 bg-brand-bone lg:px-20 xl:px-32 py-14 grid lg:grid-cols-3">
       <div className="flex flex-col justify-center">
         <div className="text-7xl w-full justify-center items-center py-7 flex lg:justify-start text-brand">
           <FaRegComments />

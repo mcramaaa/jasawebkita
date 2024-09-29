@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/landing/About";
+import Client from "@/components/landing/Client";
 import Marque from "@/components/landing/components/Marque";
 import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
@@ -9,6 +10,7 @@ import Portofolio from "@/components/landing/Portofolio";
 import Section1 from "@/components/landing/Section1";
 import Section2 from "@/components/landing/Section2";
 import Section3 from "@/components/landing/Section3";
+import Services from "@/components/landing/Services";
 import Testimoni from "@/components/landing/Testimoni";
 import Navbar from "@/components/layout/Navbar";
 import { useSection } from "@/zustand/useNav";
@@ -37,25 +39,30 @@ export default function Home() {
     <div className="relative">
       <div
         id="home"
-        className="bg-gradient-to-br from-brand-dark to-brand start-0"
+        className="bg-gradient-to-br from-brand-dark to-brand start-0 rounded-b-3xl"
       >
         <div className="z-40 absolute w-full">
           <Navbar />
         </div>
         <Hero />
       </div>
+
       <Media />
-      <Section2 />
       <Marque />
-      <div id="porto"></div>
-      <Portofolio />
+      
       <About />
+      <Section2 />
       <Section1 />
       {/* <div id="pricing"></div>
-      <Pricing /> */}
+      <Pricing /> */}   
+      <Services />
+      <Client />   
+      <div id="porto"></div>
+      <Portofolio />
       <Section3 />
       <div id="testi"></div>
       <Testimoni />
+
       <Ending />
     </div>
   );

@@ -1,10 +1,14 @@
-import { BsGraphUpArrow, BsPatchCheck } from "react-icons/bs";
+import { BsGraphUpArrow, BsPatchCheck, BsStars } from "react-icons/bs";
+import { CgTranscript } from "react-icons/cg";
 import {
   // FaFacebookF,
   FaInstagram,
   FaTiktok,
   FaWhatsapp,
 } from "react-icons/fa6";
+import { LiaPhotoVideoSolid } from "react-icons/lia";
+import { LuCalendar, LuVideo } from "react-icons/lu";
+import { RiPenNibLine } from "react-icons/ri";
 import { TbPigMoney, TbTargetArrow, TbUsersGroup } from "react-icons/tb";
 
 export const NAVMENU = [
@@ -18,15 +22,16 @@ export const NAVMENU = [
   //   label: "Pricing",
   //   refKey: "pricing",
   // },
-  {
-    value: "#Portofolio",
-    label: "Portofolio",
-    refKey: "porto",
-  },
+  
   {
     value: "#Testimoni",
     label: "Testimoni",
     refKey: "testi",
+  },
+  {
+    value: "#Portofolio",
+    label: "Portofolio",
+    refKey: "porto",
   },
   {
     value: "/contact",
@@ -71,26 +76,83 @@ export const SECTION1 = {
   value: [
     {
       label:"Jangkauan Pelanggan Semakin Meningkat",
-      desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital."
+      desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital.",
+      image:"/assets/section1/1.webp"
     },
     {
       label:"Brand-mu Semakin Terkenal",
       desc: "Brand kamu bisa semakin dikenal dan diingat banyak orang dengan membuat konten yang berkesan dan unik.",
+      image:"/assets/section1/5.webp"
     },
     {
       label:"Meningkatkan Kedekatan dengan Pelanggan",
       desc: "Berinteraksi dengan pelanggan di sosial media dapat meningkatkan loyalitas dan kedekatan emosional dengan brandmu.",
+      image:"/assets/section1/3.webp"
     },
     {
       label:"Kredibilitas dan Kepercayaan Meningkat",
       desc: "Brand yang aktif dan memiliki ulasan yang baik di sosial media cenderung lebih diminati oleh pelanggan.",
+      image:"/assets/section1/2.webp"
     },
   ],
 };
 
+export const SERVICESLIST = [
+  {
+    icon:<LuCalendar />,
+    label:"CONTENT PLANNER"
+  },
+  {
+    icon:<CgTranscript />,
+    label:"SCRIPT WRITER"
+  },
+  {
+    icon: <BsStars />,
+    label:"TALENT"
+  },
+  {
+    icon:<RiPenNibLine />,
+    label:"GRAPHIC DESIGNER"
+  },
+  {
+    icon:<LiaPhotoVideoSolid />,
+    label:"VIDEO EDITOR"
+  },
+  {
+    icon:<LuVideo />,
+    label:"VIDEOGRAPHER"
+  },
+  
+
+]
+
+export const CLIENTLIST = [
+  {
+    img:"/assets/client/AlphaProperti.webp"
+  },
+  {
+    img:"/assets/client/ElangBhumi.webp"
+  },
+  {
+    img:"/assets/client/FortunaBadja.webp"
+  },
+  {
+    img:"/assets/client/OliviaStuff.webp"
+  },
+  {
+    img:"/assets/client/OscarADS.webp"
+  },
+  {
+    img:"/assets/client/ProfilEmas.webp"
+  },
+  {
+    img:"/assets/client/TWSLaw.webp"
+  },
+]
+
 export const SECTION2 = {
   label: "Bayangkan! Jika Kamu Bisa :",
-  desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
+  // desc: "Bersama Alpha Project semua masalah pengelolaan konten bisa kami atasi, bikin bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!",
   value: [
     {
       icon: <TbTargetArrow />,
