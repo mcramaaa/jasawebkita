@@ -1,10 +1,14 @@
-import { BsGraphUpArrow, BsPatchCheck } from "react-icons/bs";
+import { BsGraphUpArrow, BsPatchCheck, BsStars } from "react-icons/bs";
+import { CgTranscript } from "react-icons/cg";
 import {
   // FaFacebookF,
   FaInstagram,
   FaTiktok,
   FaWhatsapp,
 } from "react-icons/fa6";
+import { LiaPhotoVideoSolid } from "react-icons/lia";
+import { LuCalendar, LuVideo } from "react-icons/lu";
+import { RiPenNibLine } from "react-icons/ri";
 import { TbPigMoney, TbTargetArrow, TbUsersGroup } from "react-icons/tb";
 
 export const NAVMENU = [
@@ -92,6 +96,35 @@ export const SECTION1 = {
     },
   ],
 };
+
+export const SERVICESLIST = [
+  {
+    icon:<LuCalendar />,
+    label:"CONTENT PLANNER"
+  },
+  {
+    icon:<CgTranscript />,
+    label:"SCRIPT WRITER"
+  },
+  {
+    icon: <BsStars />,
+    label:"TALENT"
+  },
+  {
+    icon:<RiPenNibLine />,
+    label:"GRAPHIC DESIGNER"
+  },
+  {
+    icon:<LiaPhotoVideoSolid />,
+    label:"VIDEO EDITOR"
+  },
+  {
+    icon:<LuVideo />,
+    label:"VIDEOGRAPHER"
+  },
+  
+
+]
 
 export const CLIENTLIST = [
   {

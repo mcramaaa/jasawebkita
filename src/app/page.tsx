@@ -10,6 +10,7 @@ import Portofolio from "@/components/landing/Portofolio";
 import Section1 from "@/components/landing/Section1";
 import Section2 from "@/components/landing/Section2";
 import Section3 from "@/components/landing/Section3";
+import Services from "@/components/landing/Services";
 import Testimoni from "@/components/landing/Testimoni";
 import Navbar from "@/components/layout/Navbar";
 import { useSection } from "@/zustand/useNav";
@@ -54,6 +55,7 @@ export default function Home() {
       <Section1 />
       {/* <div id="pricing"></div>
       <Pricing /> */}   
+      <Services />
       <Client />   
       <div id="porto"></div>
       <Portofolio />
