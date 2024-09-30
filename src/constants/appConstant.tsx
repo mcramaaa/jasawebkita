@@ -187,7 +187,7 @@ export const TESTI = [
     label: "PT. AKAS Garment",
     img: "/assets/testimoni/akas.webp",
     video:
-      "https://drive.google.com/file/d/12tY9gIG4ZuSqiFne4c9hCTUXGrwCVn_R/view?usp=sharing",
+      "https://www.youtube.com/shorts/JfueXheHE8k",
     comment:
       "Jadi semakin dikenal berkat Kontribusi dan support tim selama ini. Sosial media PT. Akas menjadi semakin  tertata, maju, dan menarik dari sebelumnya",
   },
@@ -195,7 +195,7 @@ export const TESTI = [
     label: "Alpha Propertindo",
     img: "/assets/testimoni/alphaproperti.webp",
     video:
-      "https://drive.google.com/file/d/1PvwYOab36QXigk-CnUQ096d84KWqNyE7/view?usp=sharing",
+      "https://www.youtube.com/shorts/Jf1IepUiygE",
     comment:
       "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
   },
@@ -203,7 +203,7 @@ export const TESTI = [
     label: "Profile Emas Konsultan",
     img: "/assets/testimoni/profile_emas_konsultan.webp",
     video:
-      "https://drive.google.com/file/d/1VX75j75Dx8KvJ9S_ZzmUYr7gT5t9wXfg/view?pli=1",
+      "https://www.youtube.com/shorts/tPF1GmUEd8k",
     comment:
       "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
   }
