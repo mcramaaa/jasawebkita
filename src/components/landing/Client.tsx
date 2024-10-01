@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Client() {
   return (
-    <div className='px-4 lg:px-32 bg-brand-bone mt-16 pb-8 rounded-[3.125rem]'>
+    <div className='px-4 lg:px-20 bg-brand-bone mt-16 pb-8 rounded-[3.125rem]'>
       <div className='items-center flex text-center justify-center'>
         <h1 className='text-brand font-montserrat font-bold text-2xl lg:text-5xl mt-16'>
           Our Client

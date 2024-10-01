@@ -39,7 +39,7 @@ export default function Section1() {
           {SECTION1.value.map((item, i) => (
             <div
               key={i}
-              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-11 items-center text-brand-dark justify-center"
+              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-10 items-center text-brand-dark justify-center"
             >
               {/* LEFT*/}
               <div
@@ -85,7 +85,7 @@ export default function Section1() {
                 } col-span-5 h-full w-full flex items-center justify-center `}
               >
                 {i % 2 !== 1 ? (
-                  <div className="flex gap-2 flex-col ">
+                  <div className="flex gap-2  flex-col ">
                 
                     <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl ">
                       {item.label}
