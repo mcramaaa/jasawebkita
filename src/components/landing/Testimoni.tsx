@@ -11,7 +11,7 @@ export default function Testimoni() {
 
   const isSafari =  () : boolean => {
     const userAgent = navigator.userAgent
-    return userAgent.includes("Safari") && !userAgent.includes("Chrome") && !userAgent.includes("Edge")
+    return userAgent.includes("safari") && !userAgent.includes("chrome") && !userAgent.includes("edge")
   }
 
   const openNewTab = (url: string) => {

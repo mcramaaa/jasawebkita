@@ -14,8 +14,8 @@ export default function Ending() {
                 </span>
               <WiStars className="group-hover:scale-110 text-6xl duration-300" />
             </div>
-          <span className="text-sm lg:text-xl mt-10">Jangan ragu untuk ngobrol dan konsultasi sekarang.</span>{" "}
-          <span className="text-sm lg:text-xl">Jangan sampai kompetitormu yang take action duluan.</span>
+          <span className="text-sm lg:text-lg mt-10">Jangan ragu untuk ngobrol dan konsultasi sekarang.</span>{" "}
+          <span className="text-sm lg:text-lg">Jangan sampai kompetitormu yang take action duluan.</span>
         </h2>
       </div>
     </div>
