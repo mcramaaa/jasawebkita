@@ -1,37 +1,42 @@
 import { TESTI } from "@/constants/appConstant";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Marquee from "react-fast-marquee";
-import { FaRegComments, FaStar } from "react-icons/fa6";
+import { FaPlay, FaRegComments, FaStar } from "react-icons/fa6";
+import YouTube from "react-youtube";
 
 export default function Testimoni() {
   const star = 5;
-  const router = useRouter();
 
-  const isSafari =  () : boolean => {
-    const userAgent = navigator.userAgent
-    return userAgent.includes("safari") && !userAgent.includes("chrome") && !userAgent.includes("edge")
-  }
+  const [activeVideo, setActiveVideo] = useState<number | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  const openNewTab = (url: string) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    
-    if(isSafari()){
-      // window.open(url, '_blank',"noopener,noreferrer")
-      router.push(url)
-
-    } else if(newWindow){
-        newWindow.focus()
+  const handleVideoClick = (index:any) => {
+    if(activeVideo === index){
+      setActiveVideo(null)
+    } else {
+      setActiveVideo(index)
     }
-
+  };
+  
+  const handleFullScreen = () => {
+    if (videoRef.current) {
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if ((videoRef.current as any).webkitRequestFullscreen) {
+        (videoRef.current as any).webkitRequestFullscreen(); // Safari
+      } else if ((videoRef.current as any).msRequestFullscreen) {
+        (videoRef.current as any).msRequestFullscreen(); // IE11
+      }
+    }
+  }
     // if (newWindow) {
       
     //   router.push(url);
     //   newWindow.focus();
     // }
     
-  };
+  
 
   return (
     
@@ -61,7 +66,7 @@ export default function Testimoni() {
         >
           {TESTI.map((item, i) => (
             <div
-              className="w-60 h-96 my-3 p-4 rounded-xl mr-4 flex flex-col items-center bg-white drop-shadow-lg overflow-hidden"
+              className="w-60 h-[600px] my-3 p-4 rounded-xl mr-4 flex flex-col items-center bg-white drop-shadow-lg overflow-hidden"
               key={i}
             >
               <div>
@@ -91,9 +96,32 @@ export default function Testimoni() {
                   </div>
                 </div>
 
-                <button onClick={() => openNewTab(item.video)}>
+                <div className="w-full">
+                {activeVideo === i ? (
+                    <YouTube
+                      videoId={item.video}
+                      opts={{
+                      playerVars: {
+                        autoplay: 1,
+                      },
+                    }}
+                    onPlay={handleFullScreen}
+                    onEnd={() => setActiveVideo(null)}
+                    />
+                  ) : (
+                    <div 
+                      className="w-full h-32 bg-gray-200 flex items-center justify-center cursor-pointer"
+                      onClick={() => handleVideoClick(i)}
+                    >
+                      <FaPlay className="text-4xl text-gray-500" />
+                    </div>
+                  )}
+                </div>
+
+                {/* <button onClick={() => openNewTab(item.video)}>
                   lihat video
-                </button>
+                </button> */}
+
                 {/* <Link href={item.video} target="_blank" className="text-sm">
                   Lihat video
                 </Link> */}
