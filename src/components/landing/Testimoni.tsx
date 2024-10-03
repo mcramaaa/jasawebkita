@@ -1,35 +1,35 @@
 import { TESTI } from "@/constants/appConstant";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, {useState } from "react";
 import Marquee from "react-fast-marquee";
 import { FaPlay, FaRegComments, FaStar } from "react-icons/fa6";
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 
 export default function Testimoni() {
   const star = 5;
 
   const [activeVideo, setActiveVideo] = useState<number | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  // const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const handleVideoClick = (index:any) => {
     if(activeVideo === index){
       setActiveVideo(null)
-    } else {
+    } else {  
       setActiveVideo(index)
     }
   };
   
-  const handleFullScreen = () => {
-    if (videoRef.current) {
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen();
-      } else if ((videoRef.current as any).webkitRequestFullscreen) {
-        (videoRef.current as any).webkitRequestFullscreen(); // Safari
-      } else if ((videoRef.current as any).msRequestFullscreen) {
-        (videoRef.current as any).msRequestFullscreen(); // IE11
-      }
-    }
-  }
+  // const handleFullScreen = () => {
+  //   if (videoRef.current) {
+  //     if (videoRef.current.requestFullscreen) {
+  //       videoRef.current.requestFullscreen();
+  //     } else if ((videoRef.current as any).webkitRequestFullscreen) {
+  //       (videoRef.current as any).webkitRequestFullscreen(); // Safari
+  //     } else if ((videoRef.current as any).msRequestFullscreen) {
+  //       (videoRef.current as any).msRequestFullscreen(); // IE11
+  //     }
+  //   }
+  // }
     // if (newWindow) {
       
     //   router.push(url);
@@ -98,15 +98,13 @@ export default function Testimoni() {
 
                 <div className="w-full">
                 {activeVideo === i ? (
-                    <YouTube
-                      videoId={item.video}
-                      opts={{
-                      playerVars: {
-                        autoplay: 1,
-                      },
-                    }}
-                    onPlay={handleFullScreen}
-                    onEnd={() => setActiveVideo(null)}
+                    <iframe
+                      width="100%"
+                      height="180"
+                      src={`https://www.youtube.com/embed/${item.video}?autoplay=1`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
                     />
                   ) : (
                     <div 
