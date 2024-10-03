@@ -1,8 +1,8 @@
 import { TESTI } from "@/constants/appConstant";
 import Image from "next/image";
 import React, {useState } from "react";
-import Marquee from "react-fast-marquee";
 import { FaPlay, FaRegComments, FaStar } from "react-icons/fa6";
+import ReactPlayer from "react-player";
 // import YouTube from "react-youtube";
 
 export default function Testimoni() {
@@ -13,31 +13,24 @@ export default function Testimoni() {
 
   const handleVideoClick = (index:any) => {
     if(activeVideo === index){
+      console.log("video terputar")
       setActiveVideo(null)
     } else {  
       setActiveVideo(index)
     }
   };
-  
-  // const handleFullScreen = () => {
-  //   if (videoRef.current) {
-  //     if (videoRef.current.requestFullscreen) {
-  //       videoRef.current.requestFullscreen();
-  //     } else if ((videoRef.current as any).webkitRequestFullscreen) {
-  //       (videoRef.current as any).webkitRequestFullscreen(); // Safari
-  //     } else if ((videoRef.current as any).msRequestFullscreen) {
-  //       (videoRef.current as any).msRequestFullscreen(); // IE11
-  //     }
-  //   }
-  // }
-    // if (newWindow) {
-      
-    //   router.push(url);
-    //   newWindow.focus();
-    // }
-    
-  
 
+  const handleFullScreen = () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      const videoElement = document.querySelector(`#video-${activeVideo}`);
+      if (videoElement) {
+        videoElement.requestFullscreen();
+        
+      }
+    }
+  };
   return (
     
     <div className=" px-4 bg-brand-bone lg:px-20 xl:px-32 py-14 grid lg:grid-cols-3">
@@ -55,15 +48,8 @@ export default function Testimoni() {
         </p>
       </div>
 
-      <div className="lg:col-span-2 relative grid place-items-center">
+      <div className="lg:col-span-2 relative grid grid-cols-3 place-items-center">
         <div className="absolute w-5 md:w-10 h-full z-10 left-0 bg-gradient-to-r from-brand-bone to-brand-bone/0"></div>
-        <Marquee
-          direction="right"
-          pauseOnHover
-          // pauseOnClick
-          autoFill
-          className=""
-        >
           {TESTI.map((item, i) => (
             <div
               className="w-60 h-[600px] my-3 p-4 rounded-xl mr-4 flex flex-col items-center bg-white drop-shadow-lg overflow-hidden"
@@ -98,18 +84,20 @@ export default function Testimoni() {
 
                 <div className="w-full">
                 {activeVideo === i ? (
-                    <iframe
-                      width="100%"
-                      height="180"
-                      src={`https://www.youtube.com/embed/${item.video}?autoplay=1`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                  <ReactPlayer
+                    id={`video-${activeVideo}`}
+                    url={item.video}
+                    width="100%"
+                    height="180"
+                    controls={true}
+                    playing={true}
+                    playsinline={false}
+                    onPlay={() => handleFullScreen()}
+                  />
                   ) : (
                     <div 
                       className="w-full h-32 bg-gray-200 flex items-center justify-center cursor-pointer"
-                      onClick={() => handleVideoClick(i)}
+                      onClick={() => handleVideoClick(i)} 
                     >
                       <FaPlay className="text-4xl text-gray-500" />
                     </div>
@@ -126,7 +114,6 @@ export default function Testimoni() {
               </div>
             </div>
           ))}
-        </Marquee>
         <div className="absolute w-5 md:w-10 h-full z-10 right-0 bg-gradient-to-l from-brand-bone to-brand-bone/0"></div>
       </div>
     </div>
