@@ -48,7 +48,7 @@ export default function Testimoni() {
           onSlideChange={handleSlideChange}
           effect="coverflow"
           coverflowEffect={{rotate:30, stretch:3, depth:50, modifier:1, slideShadows:false}}
-          className="w-full h-[70vh]"
+          className="w-[50vh] md:w-[90vh] lg:w-full h-[70vh]"
         >
           {TESTI.map((item, i) => (
             <SwiperSlide key={i}>
