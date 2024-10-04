@@ -48,14 +48,13 @@ export default function Testimoni() {
           onSlideChange={handleSlideChange}
           effect="coverflow"
           coverflowEffect={{rotate:30, stretch:3, depth:50, modifier:1, slideShadows:false}}
-          className="w-[50vh] md:w-[90vh] lg:w-full h-[70vh]"
+          className="w-[55vh] md:w-[90vh] lg:w-full h-[70vh]"
         >
           {TESTI.map((item, i) => (
             <SwiperSlide key={i}>
               <div className="bg-white rounded-xl p-4 h-full flex flex-col">
                 <div className="h-[50vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
                   {activeSlide === i ? (
-                    isPlaying ? (
                       <ReactPlayer
                         url={item.video}
                         width="100%"
@@ -65,15 +64,8 @@ export default function Testimoni() {
                         onEnded={() => setIsPlaying(false)}
                       />
                     ) : (
-                      <button onClick={handleVideoClick}>
-                        <FaPlay className="text-xl text-white" />
-                      </button>
-                    )
-                  ) : (
-                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                      <span>SlideTest {i + 1}</span>
-                    </div>
-                  )}
+                      <p className="text-xl text-white"> <FaPlay /></p>
+                    )}
                 </div>
                 <p className="justify-center mt-4 flex">{item.label}</p>
               </div>
