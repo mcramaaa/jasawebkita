@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import 'swiper/css/effect-coverflow';
+import VisibilitySensor from "react-visibility-sensor";
 
 export default function Testimoni() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -17,9 +18,9 @@ export default function Testimoni() {
     setIsPlaying(false);
   };
 
-  const handleVideoClick = () => {
-    setIsPlaying(!isPlaying);
-  };
+  const onVisible = (isVisible : boolean) => {
+    setIsPlaying(isVisible)
+  }
 
   return (
     <div className="px-4 bg-brand-bone lg:px-20 xl:px-32 py-14 grid lg:grid-cols-3">
@@ -53,20 +54,25 @@ export default function Testimoni() {
           {TESTI.map((item, i) => (
             <SwiperSlide key={i}>
               <div className="bg-white rounded-xl p-4 h-full flex flex-col">
-                <div className="h-[50vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
-                  {activeSlide === i ? (
-                      <ReactPlayer
-                        url={item.video}
-                        width="100%"
-                        height="100%"
-                        controls={true}
-                        playing={true}
-                        onEnded={() => setIsPlaying(false)}
-                      />
-                    ) : (
-                      <p className="text-xl text-white"> <FaPlay /></p>
-                    )}
-                </div>
+                <VisibilitySensor
+                  partialVisibility
+                  onChange={onVisible}
+                >
+                  <div className="h-[50vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
+                    {activeSlide === i && isPlaying ? (
+                        <ReactPlayer
+                          url={item.video}
+                          width="100%"
+                          height="100%"
+                          controls={true}
+                          playing={true}
+                          onEnded={() => setIsPlaying(false)}
+                        />
+                      ) : (
+                        <p className="text-xl text-white"> <FaPlay /></p>
+                      )}
+                  </div>
+                </VisibilitySensor>
                 <p className="justify-center mt-4 flex">{item.label}</p>
               </div>
             </SwiperSlide>
