@@ -48,7 +48,7 @@ export default function Testimoni() {
         </p>
       </div>
 
-      <div className="lg:col-span-2 relative grid grid-cols-3 place-items-center">
+      <div className="lg:col-span-2 relative grid grid-cols-1 lg:grid-cols-3 place-items-center">
         <div className="absolute w-5 md:w-10 h-full z-10 left-0 bg-gradient-to-r from-brand-bone to-brand-bone/0"></div>
           {TESTI.map((item, i) => (
             <div

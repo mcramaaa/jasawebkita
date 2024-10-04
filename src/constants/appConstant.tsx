@@ -205,7 +205,7 @@ export const TESTI = [
     video:
       "https://www.youtube.com/shorts/tPF1GmUEd8k",
     comment:
-      "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
+      "Awalnya kami sempat ragu, tapi ternyata bisnis kami bisa tumbuh pesat. Semua itu berkat strategi yang matang dan eksekusi tim yang profesional serta penuh dedikasi. Kami bangga bisa bekerja bersama tim hebat yang selalu total dalam setiap langkah",
   }
   
 ];
