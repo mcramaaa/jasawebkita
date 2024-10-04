@@ -26,7 +26,7 @@ export default function Hero() {
                 Stop Pusing <span className="text-5xl lg:text-[6rem]"><span className="text-yellow-500">Mikir</span> Konten</span>
               </h1>
 
-              <h2 className="font-montserrat text-lg  mt-9 lg:px-20 text-center lg:text-start text-white">
+              <h2 className="font-montserrat text-xl lg:text-lg  mt-9 lg:px-20 text-center lg:text-start text-white">
                 Amankan Slotmu,<span className="text-yellow-400 font-bold">{" "}Cuma 50rb!</span> Dapet Konten Selengkap Ini!
               </h2>
               
