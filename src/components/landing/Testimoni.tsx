@@ -23,7 +23,7 @@ export default function Testimoni() {
   }
 
   return (
-    <div className="px-4 bg-brand-bone lg:px-20 xl:px-32 py-14 grid lg:grid-cols-3">
+    <div className="px-4 bg-brand-bone lg:px-20 xl:px-32 py-14 grid grid-cols-1 lg:grid-cols-3">
       <div className="flex flex-col justify-center">
         <div className="text-7xl w-full justify-center items-center py-7 flex lg:justify-start text-brand">
           <FaRegComments />
@@ -53,12 +53,12 @@ export default function Testimoni() {
         >
           {TESTI.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white rounded-xl p-4 h-full flex flex-col">
+              <div className="bg-white rounded-xl p-4  flex flex-col ">
                 <VisibilitySensor
                   partialVisibility
                   onChange={onVisible}
                 >
-                  <div className="h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
+                  <div className=" bg-brand-bone flex h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] items-center justify-center relative ">
                     {activeSlide === i && isPlaying ? (
                         <ReactPlayer
                           url={item.video}
