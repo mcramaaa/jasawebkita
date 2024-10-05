@@ -49,7 +49,7 @@ export default function Testimoni() {
           onSlideChange={handleSlideChange}
           effect="coverflow"
           coverflowEffect={{rotate:30, stretch:3, depth:50, modifier:1, slideShadows:false}}
-          className="sm:w-[50vh] md:w-[90vh] lg:w-full h-[70vh]"
+          className="w-full h-full"
         >
           {TESTI.map((item, i) => (
             <SwiperSlide key={i}>
@@ -58,7 +58,7 @@ export default function Testimoni() {
                   partialVisibility
                   onChange={onVisible}
                 >
-                  <div className="h-[50vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
+                  <div className="h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] bg-brand-bone flex items-center justify-center relative overflow-hidden">
                     {activeSlide === i && isPlaying ? (
                         <ReactPlayer
                           url={item.video}
