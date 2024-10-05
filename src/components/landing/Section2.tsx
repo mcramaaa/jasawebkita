@@ -22,7 +22,7 @@ export default function Section2() {
           />
         ))}
       </div>
-      <p className="mt-32 text-center mx-32  text-lg lg:text-2xl text-brand font-montserrat"><span className="font-bold ">Bersama Alpha Project</span> semua masalah pengelolaan konten bisa kami atasi, bikin <span className="font-bold ">bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!</span></p>
+      <p className="mt-32 text-center sm:mx-10 md:mx-24 lg:mx-32 text-lg lg:text-2xl text-brand font-montserrat"><span className="font-bold ">Bersama Alpha Project</span> semua masalah pengelolaan konten bisa kami atasi, bikin <span className="font-bold ">bisnis kamu lebih dikenal, mudah dicari, dan makin menguntungkan setiap hari!</span></p>
     </div>
   );
 }

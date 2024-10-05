@@ -184,29 +184,24 @@ export const SECTION2 = {
 
 export const TESTI = [
   {
-    label: "PT. AKAS Garment",
+    label:"PT. Akas",
     img: "/assets/testimoni/akas.webp",
     video:
       "https://www.youtube.com/shorts/JfueXheHE8k",
-    comment:
-      "Jadi semakin dikenal berkat Kontribusi dan support tim selama ini. Sosial media PT. Akas menjadi semakin  tertata, maju, dan menarik dari sebelumnya",
   },
   {
-    label: "Alpha Propertindo",
+    label:"Alpha Properti",
     img: "/assets/testimoni/alphaproperti.webp",
     video:
       "https://www.youtube.com/shorts/Jf1IepUiygE",
-    comment:
-      "Berawal dari keraguan, bisnis kami mengalami lonjakan berkat strategi dan eksekusi tim yang profesional dan berdedikasi",
   },
   {
-    label: "Profile Emas Konsultan",
+    label:"Profil Emas Konsultan",
     img: "/assets/testimoni/profile_emas_konsultan.webp",
     video:
       "https://www.youtube.com/shorts/tPF1GmUEd8k",
-    comment:
-      "Awalnya kami sempat ragu, tapi ternyata bisnis kami bisa tumbuh pesat. Semua itu berkat strategi yang matang dan eksekusi tim yang profesional serta penuh dedikasi. Kami bangga bisa bekerja bersama tim hebat yang selalu total dalam setiap langkah",
-  }
+  },
+  
   
 ];
 
