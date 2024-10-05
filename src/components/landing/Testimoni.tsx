@@ -15,11 +15,13 @@ export default function Testimoni() {
 
   const handleSlideChange = (swiper: any) => {
     setActiveSlide(swiper.activeIndex);
-    setIsPlaying(false);
+    setIsPlaying(true);
   };
 
   const onVisible = (isVisible : boolean) => {
-    setIsPlaying(isVisible)
+    if(isVisible && !isPlaying){
+      setIsPlaying(true)
+    }
   }
 
   return (
@@ -57,6 +59,7 @@ export default function Testimoni() {
                 <VisibilitySensor
                   partialVisibility
                   onChange={onVisible}
+                  offset={{ top: 50, bottom: 50 }} 
                 >
                   <div className=" bg-brand-bone flex h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] items-center justify-center relative ">
                     {activeSlide === i && isPlaying ? (
@@ -67,6 +70,7 @@ export default function Testimoni() {
                           controls={true}
                           playing={true}
                           onEnded={() => setIsPlaying(false)}
+                          key={i}
                         />
                       ) : (
                         <p className="text-xl text-white"> <FaPlay /></p>
