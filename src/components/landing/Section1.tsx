@@ -39,31 +39,31 @@ export default function Section1() {
           {SECTION1.value.map((item, i) => (
             <div
               key={i}
-              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-10 items-center text-brand-dark justify-center"
+              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-14  items-center text-brand-dark justify-center"
             >
               {/* LEFT*/}
               <div
                 className={`${
-                  i % 2 !== 1 ? "order-1 md:order-1" : "order-2"
-                } col-span-5 h-full w-full flex items-center justify-center`}
+                  i % 2 !== 1 ? "order-1 md:order-1" : "order-1 md:order-3"
+                } col-span-6 h-full w-full flex items-center justify-end`}
               >
                 {i % 2 === 1 ? (
-                  <div className="flex gap-2 md:items-start  flex-col">
+                  <div className="w-80 h-96 relative object-contain flex justify-center">
+                    <Image src={item.image} alt="" fill className="z-20" />
+                    <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
+                  </div>
+                )  : (
+                  <div className="flex gap-2 md:items-end flex-col">
                     <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 lg:bg-gradient-to-l bg-gradient-to-r from-brand-dark to-brand lg:w-fit text-white font-bold lg:text-2xl">
                       {item.label}
                     </h4>
                     <p className="text-sm md:text-base">{item.desc}</p>
                   </div>
-                )  : (
-                  <div className="w-80 h-96 relative object-contain flex justify-center">
-                    <Image src={item.image} alt="" fill className="z-20" />
-                    <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
-                  </div>
                 )}
               </div>
 
               {/* MID */}
-              {/* <div className="w-full  h-full hidden md:flex flex-col items-center">
+              <div className="col-span-1 w-full h-full hidden md:flex flex-col items-center justify-center ">
                 <div
                   className={`grid place-items-center ${
                     i !== SECTION1.value.length - 1 ? "h-[50px]" : "h-[40px]"
@@ -76,27 +76,27 @@ export default function Section1() {
                 {i !== SECTION1.value.length - 1 && (
                   <div className="w-[3px] h-full bg-brand"></div>
                 )}
-              </div> */}
+              </div>
 
               {/* RIGHT */}
               <div
                 className={`${
-                  i % 2 === 1 ? "order-1 md:order-2" : "order-1"
-                } col-span-5 h-full w-full flex items-center justify-center `}
+                  i % 2 === 1 ? "order-1 md:order-1" : "order-1 md:order-3"
+                } col-span-6  h-full w-full flex justify-start marker:items-center`}
               >
                 {i % 2 !== 1 ? (
-                  <div className="flex gap-2  flex-col ">
+                  <div className="w-80 h-96 object-contain relative ">
+                      <Image src={item.image} alt="" fill className="z-20"/>
+                      <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
+                  </div>
+                ) : (
+                  <div className="flex gap-2 flex-col md:items-start   ">
                 
                     <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl ">
                       {item.label}
                     </h4>
 
                     <p className="text-sm md:text-base">{item.desc}</p>
-                  </div>
-                ) : (
-                  <div className="w-80 h-96 object-contain relative ">
-                      <Image src={item.image} alt="" fill className="z-20"/>
-                      <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
                   </div>
                 )}
               </div>
