@@ -57,6 +57,12 @@ export const MEDIALIST = [
   }
 ]
 
+export const ABOUTALPHAVALUE = {
+  title:"Alpha Project",
+  desc:"Alpha Project suatu perushaan yang bergerak di bidang kreatif dan konten kreator bagi para perintis umkm ",
+  video:""
+}
+
 export const ABOUTVALUE = {
   // label: "Pernahkah Kamu Merasa :",
   value: [

@@ -47,7 +47,6 @@ export default function Home() {
         <Hero />
       </div>
 
-      <Media />
       <Marque />
       
       <About />
@@ -55,6 +54,7 @@ export default function Home() {
       <Section1 />
       {/* <div id="pricing"></div>
       <Pricing /> */}   
+      <Media />
       <Services />
       <Client />   
       <div id="porto"></div>
