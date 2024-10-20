@@ -148,6 +148,27 @@ export const CLIENTLIST = [
   {
     img:"/assets/client/TWSLaw.webp"
   },
+  {
+    img:"/assets/client/alphaRealty.webp"
+  },
+  {
+    img:"/assets/client/anugerahKarya.webp"
+  },
+  {
+    img:"/assets/client/BBIZ.webp"
+  },
+  {
+    img:"/assets/client/geoanField.webp"
+  },
+  {
+    img:"/assets/client/thalitaAtmaSentosa.webp"
+  },
+  {
+    img:"/assets/client/TWSConsulting.webp"
+  },
+  {
+    img:"/assets/client/easyTax.webp"
+  },
 ]
 
 export const SECTION2 = {
