@@ -25,45 +25,43 @@ export default function Section1() {
           </div>
         </div>
         <div className="mt-10 z-30">
-        <div className="absolute left-1/2 top-[19%] bottom-0 w-0.5 bg-brand"></div>
+        <div className="absolute left-1/2 hidden lg:flex top-[19%] bottom-0 w-0.5 bg-brand"></div>
           {SECTION1.value.map((item, i) => (
+            <div key={i} className=" flex  items-center mb-16 px-4 lg:px-48 mx-4 lg:mx-36 relative">
 
+              <div className={`flex-1 ${i % 2 === 0 ? 'lg:pr-24 lg:pl-12 lg:text-right' : 'lg:order-2 '} text-center`}>
 
-             <div key={i} className="flex items-center mb-16 px-4 lg:px-48 mx-4 lg:mx-36 relative">
-
-              <div className={`flex-1 pr-24  ${i % 2 === 0 ? 'text-right' : 'order-2 pl-8 pr-0'}`}>
-                
                 {/* MID */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl w-20 h-20 bg-brand rounded-full flex items-center justify-center text-white font-bold">
-                {i + 1}
-              </div>
-            
-               {i % 2 !== 0 ? (
-                 <div className="text-right">
-                   <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
-                   <p className="text-sm md:text-base">{item.desc}</p>
-                 </div>
-               ) : (
-                 <div className="w-full h-[500px] relative">
-                   <Image src={item.image} alt="" layout="fill" objectFit="contain" />
-                 </div>
-               )}
-              </div>
+                <div className="absolute hidden lg:flex left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl w-20 h-20 bg-brand rounded-full items-center justify-center text-white font-bold">
+                  {i + 1}
+                </div>
 
+                {i % 2 !== 0 ? (
+                  <div className="lg:text-right">
+                    <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
+                    <p className="text-sm md:text-base">{item.desc}</p>
+                  </div>
+                ) : (
+                  <div className="w-full h-[300px] sm:h-[500px] relative ">
+                    <Image src={item.image} alt="" layout="fill" objectFit="contain" />
+                  </div>
+                )}
+              </div>
+              
+              <div className={`flex-1 ${i % 2 !== 0 ? 'lg:order-2 lg:pr-24 lg:pl-24' : 'lg:text-left'} text-center`}>
+                {i % 2 === 1 ? (
+                  <div className="w-full h-[300px] sm:h-[500px] relative">
+                    <Image src={item.image} alt="" layout="fill" objectFit="contain" />
+                  </div>
+                ) : (
+                  <div>
+                    <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
+                    <p className="text-sm md:text-base">{item.desc}</p>
+                  </div>
+                )}
+              </div>
+            </div>
 
-             <div className={`flex-1 pl-8 ${i % 2 !== 0 ? 'order-2 pr-8 pl-0' : 'text-left'}`}>
-               {i % 2 === 1 ? (
-                 <div className="w-full h-[500px] relative">
-                   <Image src={item.image} alt="" layout="fill" objectFit="contain" />
-                 </div>
-               ) : (
-                 <div>
-                   <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
-                   <p className="text-sm md:text-base">{item.desc}</p>
-                 </div>
-               )}
-             </div>
-           </div>
             // <div
             //   key={i}
             //   className="grid mx-4 px-4 lg:px-52 lg:mx-32 grid-cols-1 md:grid-cols-13  items-center text-brand-dark justify-center"
