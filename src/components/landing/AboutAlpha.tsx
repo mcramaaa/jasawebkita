@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player'
 export default function AboutAlpha() {
   return (
     <div className='px-4 lg:px-32 '>
-        <div className='justify-center items-center text-center font-montserrat mt-16'>
+        <div className='justify-center items-center text-center font-montserrat mt-24'>
             <h2 className='text-xl md:text-2xl lg:text-4xl font-bold text-brand'>
                 Tentang Kami
             </h2>
