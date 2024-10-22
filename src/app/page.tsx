@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/landing/About";
+import AboutAlpha from "@/components/landing/AboutAlpha";
 import Client from "@/components/landing/Client";
 import Marque from "@/components/landing/components/Marque";
 import Media from "@/components/landing/components/Media";
@@ -47,14 +48,14 @@ export default function Home() {
         <Hero />
       </div>
 
-      <Media />
+      <AboutAlpha />
       <Marque />
-      
       <About />
       <Section2 />
       <Section1 />
       {/* <div id="pricing"></div>
       <Pricing /> */}   
+      <Media />
       <Services />
       <Client />   
       <div id="porto"></div>

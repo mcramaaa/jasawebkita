@@ -57,6 +57,12 @@ export const MEDIALIST = [
   }
 ]
 
+export const ABOUTALPHAVALUE = {
+  title:"Alpha Project",
+  desc:"Alpha Project suatu perushaan yang bergerak di bidang kreatif dan konten kreator bagi para perintis umkm ",
+  video:"https://youtu.be/t9jLby937bE"
+}
+
 export const ABOUTVALUE = {
   // label: "Pernahkah Kamu Merasa :",
   value: [
@@ -77,22 +83,22 @@ export const SECTION1 = {
     {
       label:"Jangkauan Pelanggan Semakin Meningkat",
       desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital.",
-      image:"/assets/section1/1.webp"
+      image:"/assets/section1/1.png"
     },
     {
       label:"Brand-mu Semakin Terkenal",
       desc: "Brand kamu bisa semakin dikenal dan diingat banyak orang dengan membuat konten yang berkesan dan unik.",
-      image:"/assets/section1/5.webp"
+      image:"/assets/section1/2.png"
     },
     {
       label:"Meningkatkan Kedekatan dengan Pelanggan",
       desc: "Berinteraksi dengan pelanggan di sosial media dapat meningkatkan loyalitas dan kedekatan emosional dengan brandmu.",
-      image:"/assets/section1/3.webp"
+      image:"/assets/section1/3.png"
     },
     {
       label:"Kredibilitas dan Kepercayaan Meningkat",
       desc: "Brand yang aktif dan memiliki ulasan yang baik di sosial media cenderung lebih diminati oleh pelanggan.",
-      image:"/assets/section1/2.webp"
+      image:"/assets/section1/4.png"
     },
   ],
 };
@@ -147,6 +153,27 @@ export const CLIENTLIST = [
   },
   {
     img:"/assets/client/TWSLaw.webp"
+  },
+  {
+    img:"/assets/client/alphaRealty.webp"
+  },
+  {
+    img:"/assets/client/anugerahKarya.webp"
+  },
+  {
+    img:"/assets/client/BBIZ.webp"
+  },
+  {
+    img:"/assets/client/geoanField.webp"
+  },
+  {
+    img:"/assets/client/thalitaAtmaSentosa.webp"
+  },
+  {
+    img:"/assets/client/TWSConsulting.webp"
+  },
+  {
+    img:"/assets/client/easyTax.webp"
   },
 ]
 

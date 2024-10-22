@@ -1,6 +1,7 @@
 import { CLIENTLIST } from '@/constants/appConstant'
 import Image from 'next/image'
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 
 export default function Client() {
   return (
@@ -10,15 +11,22 @@ export default function Client() {
           Our Client
         </h1>
       </div>
-      <div className='flex flex-wrap items-center justify-center gap-6'>
+      <div className='flex  items-center justify-center '>
+        <Marquee
+          speed={60}
+          autoFill
+          className="h-full py-10 relative overflow-hidden "
+        >
+          
         {CLIENTLIST.map((item, i) =>
         
-          <div key={i} className='relative w-80 h-80 '>
+          <div key={i} className='relative w-64 h-64 '>
             <div >
-              <Image src={item.img} alt='' fill objectFit='contain'className='animate' />
+                <Image src={item.img} alt='' fill objectFit='contain' />
             </div>
           </div>
         )}
+        </Marquee>
       </div>
     </div>  
   )

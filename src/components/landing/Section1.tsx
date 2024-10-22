@@ -11,16 +11,6 @@ export default function Section1() {
         alt=""
         fill
       />
-      {/* <div className="z-20 -top-1 absolute rotate-180 w-full">
-        <div className="relative w-full aspect-[9/1]">
-          <Image
-            alt=""
-            className="bottom-0 absolute object-cover"
-            fill
-            src={"/shape.svg"}
-          />
-        </div>
-      </div> */}
       <div>
         <div className="flex mx-4 mt-16 lg:mx-20 md:mt-24 lg:mt-20 flex-col gap-10">
           <div className="w-full flex flex-col items-center  justify-center">
@@ -35,85 +25,106 @@ export default function Section1() {
           </div>
         </div>
         <div className="mt-10 z-30">
-
+        <div className="absolute left-1/2 hidden lg:flex top-[19%] bottom-0 w-0.5 bg-brand"></div>
           {SECTION1.value.map((item, i) => (
-            <div
-              key={i}
-              className="grid mx-4 px-4 lg:px-32 lg:mx-20 grid-cols-1 md:grid-cols-10 items-center text-brand-dark justify-center"
-            >
-              {/* LEFT*/}
-              <div
-                className={`${
-                  i % 2 !== 1 ? "order-1 md:order-1" : "order-2"
-                } col-span-5 h-full w-full flex items-center justify-center`}
-              >
-                {i % 2 === 1 ? (
-                  <div className="flex gap-2 md:items-start  flex-col">
-                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 lg:bg-gradient-to-l bg-gradient-to-r from-brand-dark to-brand lg:w-fit text-white font-bold lg:text-2xl">
-                      {item.label}
-                    </h4>
-                    <p className="text-sm md:text-base">{item.desc}</p>
-                  </div>
-                )  : (
-                  <div className="w-80 h-96 relative object-contain flex justify-center">
-                    <Image src={item.image} alt="" fill className="z-20" />
-                    <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
-                  </div>
-                )}
-              </div>
+            <div key={i} className=" flex  items-center mb-16 px-4 lg:px-48 mx-4 lg:mx-36 relative">
 
-              {/* MID */}
-              {/* <div className="w-full  h-full hidden md:flex flex-col items-center">
-                <div
-                  className={`grid place-items-center ${
-                    i !== SECTION1.value.length - 1 ? "h-[50px]" : "h-[40px]"
-                  }  rounded-full w-[40px] bg-brand`}
-                >
-                  <p className="font-montserrat text-white font-bold text-center">
-                    {i + 1}
-                  </p>
+              <div className={`flex-1 ${i % 2 === 0 ? 'lg:pr-24 lg:pl-12 lg:text-right' : 'lg:order-2 '} text-center`}>
+
+                {/* MID */}
+                <div className="absolute hidden lg:flex left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl w-20 h-20 bg-brand rounded-full items-center justify-center text-white font-bold">
+                  {i + 1}
                 </div>
-                {i !== SECTION1.value.length - 1 && (
-                  <div className="w-[3px] h-full bg-brand"></div>
-                )}
-              </div> */}
 
-              {/* RIGHT */}
-              <div
-                className={`${
-                  i % 2 === 1 ? "order-1 md:order-2" : "order-1"
-                } col-span-5 h-full w-full flex items-center justify-center `}
-              >
-                {i % 2 !== 1 ? (
-                  <div className="flex gap-2  flex-col ">
-                
-                    <h4 className="px-3 font-montserrat rounded-lg lg:rounded-full py-1 bg-brand bg-gradient-to-r from-brand-dark to-brand w-full md:w-fit text-white font-bold lg:text-2xl ">
-                      {item.label}
-                    </h4>
-
+                {i % 2 !== 0 ? (
+                  <div className="lg:text-right">
+                    <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
                     <p className="text-sm md:text-base">{item.desc}</p>
                   </div>
                 ) : (
-                  <div className="w-80 h-96 object-contain relative ">
-                      <Image src={item.image} alt="" fill className="z-20"/>
-                      <div className="bg-white h-1/2 w-full absolute bottom-0 rounded-3xl z-0"></div>
+                  <div className="w-full h-[300px] sm:h-[500px] relative ">
+                    <Image src={item.image} alt="" layout="fill" objectFit="contain" />
+                  </div>
+                )}
+              </div>
+              
+              <div className={`flex-1 ${i % 2 !== 0 ? 'lg:order-2 lg:pr-24 lg:pl-24' : 'lg:text-left'} text-center`}>
+                {i % 2 === 1 ? (
+                  <div className="w-full h-[300px] sm:h-[500px] relative">
+                    <Image src={item.image} alt="" layout="fill" objectFit="contain" />
+                  </div>
+                ) : (
+                  <div>
+                    <h4 className="font-montserrat font-bold text-2xl mb-2">{item.label}</h4>
+                    <p className="text-sm md:text-base">{item.desc}</p>
                   </div>
                 )}
               </div>
             </div>
+
+            // <div
+            //   key={i}
+            //   className="grid mx-4 px-4 lg:px-52 lg:mx-32 grid-cols-1 md:grid-cols-13  items-center text-brand-dark justify-center"
+            // >
+            //   {/* RIGHT */}
+            //   <div
+            //     className={`${
+            //       i % 2 !== 1 ? "order-1 md:order-1" : "order-1 md:order-2"
+            //     } col-span-5 flex items-center justify-end pb-10`}
+            //   >
+            //     {i % 2 === 1  ? (
+            //       <div className="w-96 h-96 flex relative">
+            //         <Image src={item.image} alt="" fill objectFit="contain" />
+            //       </div>
+            //     )  : (
+            //       <div className="flex gap-2 flex-col lg:max-w-xl text-right">
+            //         <h4 className="font-montserrat font-bold lg:text-2xl w-full">
+            //           {item.label}
+            //         </h4>
+            //         <p className="text-sm md:text-base ">{item.desc}</p>
+            //       </div>
+            //     )}
+            //   </div>
+
+            //   {/* MID */}
+            //   <div className="col-span-3 w-full h-full hidden md:flex flex-col items-center justify-center ">
+            //     <div
+            //       className={`grid place-items-center ${
+            //         i !== SECTION1.value.length - 1 ? "h-[80px]" : "h-[40px]"
+            //       }  rounded-full w-[40px] bg-brand`}
+            //     >
+            //       <p className="font-montserrat text-white font-bold text-center">
+            //         {i + 1}
+            //       </p>
+            //     </div>
+            //     {i !== SECTION1.value.length - 1 && (
+            //       <div className="w-[3px] h-full bg-brand"></div>
+            //     )}
+            //   </div>
+
+            //   {/* LEFT */}
+            //   <div
+            //     className={`${
+            //       i % 2 === 1 ? "order-1 md:order-1" : "order-1 md:order-3"
+            //     } col-span-5 w-full justify-start `}
+            //   >
+            //     {i % 2 !== 1 ? (
+            //       <div className="w-96 h-96 flex items-center relative max-h-xl ">
+            //         <Image src={item.image} alt="" fill objectFit="contain" />
+            //       </div>
+            //     ) : (
+            //       <div className="flex gap-2 flex-col text-left lg:max-w-xl">
+            //         <h4 className="font-montserrat font-bold lg:text-2xl ">
+            //           {item.label}
+            //         </h4>
+            //         <p className="text-sm md:text-base">{item.desc}</p>
+            //       </div>
+            //     )}
+            //   </div>
+            // </div>
           ))}
         </div>
       </div>
-      {/* <div className="z-20 top-0 w-full">
-        <div className="relative w-full aspect-[9/1]">
-          <Image
-            alt=""
-            className="bottom-0 absolute object-cover"
-            fill
-            src={"/shape.svg"}
-          />
-        </div>
-      </div> */}
     </div>
   );
 }
