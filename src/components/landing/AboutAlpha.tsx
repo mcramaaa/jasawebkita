@@ -16,7 +16,7 @@ export default function AboutAlpha() {
         </div>
 
         <div className='grid grid-cols-2 justify-center items-center pt-16 pb-16 mx-4 lg:mx-20 xl:mx-72'>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center h-full w-full'>
                 <ReactPlayer 
                     url={ABOUTALPHAVALUE.video}
                     width="100%"

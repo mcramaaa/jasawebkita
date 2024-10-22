@@ -35,7 +35,7 @@ export default function Hero() {
                   target="_blank"
                   className="py-4 px-8 bg-hero-Base text-brand-dark rounded-md animate-bounce lg:text-2xl mt-4 hover:bg-brand-dark hover:text-white duration-300 font-bold "
                   href={
-                    "https://api.whatsapp.com/send?phone=6285184864504&text=Hai%2C%20Alpha%20Project!%20Mau%20konsultasi%20untuk%20upgrading%20sosial%20media%20brand%20saya%2C%20nih!%20"
+                    "https://bit.ly/AlphaPromo50ribu"
                   }
                 >
                   Konsultasi Sekarang!
