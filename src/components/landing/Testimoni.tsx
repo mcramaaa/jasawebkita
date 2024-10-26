@@ -1,5 +1,5 @@
 import { TESTI } from "@/constants/appConstant";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaPlay, FaRegComments } from "react-icons/fa6";
 import ReactPlayer from "react-player";
 import {  Pagination, EffectCoverflow } from "swiper/modules";
@@ -57,9 +57,7 @@ export default function Testimoni() {
             <SwiperSlide key={i}>
               <div className="bg-white rounded-xl p-4  flex flex-col ">
                 <VisibilitySensor
-                  partialVisibility
                   onChange={onVisible}
-                  offset={{ top: 50, bottom: 50 }} 
                 >
                   <div className=" bg-brand-bone flex h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] items-center justify-center relative ">
                     {activeSlide === i && isPlaying ? (
