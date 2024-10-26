@@ -1,5 +1,5 @@
 import { TESTI } from "@/constants/appConstant";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { FaPlay, FaRegComments } from "react-icons/fa6";
 import ReactPlayer from "react-player";
 import {  Pagination, EffectCoverflow } from "swiper/modules";
