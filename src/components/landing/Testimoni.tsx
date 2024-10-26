@@ -57,9 +57,7 @@ export default function Testimoni() {
             <SwiperSlide key={i}>
               <div className="bg-white rounded-xl p-4  flex flex-col ">
                 <VisibilitySensor
-                  partialVisibility
                   onChange={onVisible}
-                  offset={{ top: 50, bottom: 50 }} 
                 >
                   <div className=" bg-brand-bone flex h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] items-center justify-center relative ">
                     {activeSlide === i && isPlaying ? (
