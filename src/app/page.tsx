@@ -8,6 +8,7 @@ import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
 import Portofolio from "@/components/landing/Portofolio";
+import Pricing from "@/components/landing/Pricing";
 import Section1 from "@/components/landing/Section1";
 import Section2 from "@/components/landing/Section2";
 import Section3 from "@/components/landing/Section3";
@@ -33,36 +34,36 @@ export default function Home() {
 
   useEffect(() => {
     scrollToSection(section);
-    console.log("h");
   }, [section]);
-  
+
   return (
     <div className="relative">
-      <div
-        id="home"
-        className="bg-gradient-to-br from-brand-dark to-brand start-0 rounded-b-3xl"
-      >
-        <div className="z-40 absolute w-full">
+      <div id="home">
+        <div className="z-40 sticky w-full">
           <Navbar />
         </div>
-        <Hero />
       </div>
 
-      <AboutAlpha />
+      <div>
+        <Hero scrollPricing={scrollToSection} />
+      </div>
       <Marque />
+      {/* <AboutAlpha /> */}
+      <div id="pricing"></div>
+      <Pricing />
+      {/* 
       <About />
       <Section2 />
       <Section1 />
-      {/* <div id="pricing"></div>
-      <Pricing /> */}   
+      
       <Media />
       <Services />
-      <Client />   
+      <Client />
       <div id="porto"></div>
       <Portofolio />
       <Section3 />
       <div id="testi"></div>
-      <Testimoni />
+      <Testimoni /> */}
 
       <Ending />
     </div>

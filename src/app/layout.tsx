@@ -4,14 +4,13 @@ import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
-import Script from "next/script";
 
 const inter = Comfortaa({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Jasa Kelola Sosial Media : Mulai Perjalanan Suksesmu Hari Ini!",
+  title: "Jasa Web Kita : Mulai digitalisasi Bisnismu Hari Ini!",
   description:
-    "Buat bisnismu makin menarik dan dilirik bersama Alpha Project! Ditangani oleh tim profesional mulai dari fotografer, videograer, editor, graphic designer, dan content planner",
+    "Buat bisnismu makin modern dan dilirik bersama jasa web kita! Ditangani oleh tim profesional mulai dari web developer, apps developer, graphic designer, dan video editor ",
 };
 
 export default function RootLayout({
@@ -22,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        {/* <Script id="facebook-pixel" strategy="afterInteractive">
           {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -43,7 +42,7 @@ export default function RootLayout({
             style={{ display: "none" }}
             src={`https://www.facebook.com/tr?id=248239781718151&ev=PageView& noscript=1`}
           />
-        </noscript>
+        </noscript> */}
       </head>
       <body className={inter.className}>
         <Provider>{children}</Provider>

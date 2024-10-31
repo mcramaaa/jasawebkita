@@ -19,12 +19,16 @@ const config: Config = {
           bone: "#dce6f0",
           white: "#fafafa",
           yellow: "#fdc500",
-          blue: "#1E4169"
+          blue: "#1E4169",
+          grey: "#2d2e32",
+          core: "#00e5ff",
+          core2: "#00c3ff",
+          coreDark: "#013a41",
+          darkgrey: "#1c1d20",
         },
         hero: {
-          Base: "#DCE6F0"
-        }
-
+          Base: "#DCE6F0",
+        },
       },
     },
   },
