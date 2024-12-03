@@ -14,14 +14,14 @@ export default function Hero(props: IProps) {
     <>
       <div className="relative p-3 md:pt-10 md:px-5">
         <div className="lg:h-[75vh] overflow-hidden mt-16 md:mt-7 h-[75vh] rounded-xl  relative">
-          <video
+          {/* <video
             autoPlay
             loop
             // playsInline
             muted
             className="object-cover w-full h-full absolute pointer-events-none "
             src={`https://videos.pexels.com/video-files/29607597/12742138_1920_1080_30fps.mp4`}
-          ></video>
+          ></video> */}
 
           <div className="absolute w-full grid lg:grid-cols-2 h-full items-center justify-center bg-gradient-to-b from-brand-core2/50 to-brand-core2/60">
             <div className="flex justify-center hover:rotate-3 duration-300 hover:animate-pulse">

@@ -2,6 +2,7 @@
 
 import Marque from "@/components/landing/components/Marque";
 import Ending from "@/components/landing/Ending";
+import Hero from "@/components/landing/Hero";
 import Pricing from "@/components/landing/Pricing";
 import Navbar from "@/components/layout/Navbar";
 import { useSection } from "@/zustand/useNav";
@@ -33,7 +34,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div>{/* <Hero scrollPricing={scrollToSection} /> */}</div>
+      <div>
+        <Hero scrollPricing={scrollToSection} />
+      </div>
       <Marque />
       {/* <AboutAlpha /> */}
       <div id="pricing"></div>
