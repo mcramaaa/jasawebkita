@@ -13,8 +13,17 @@ export default function Hero(props: IProps) {
   return (
     <>
       <div className="relative p-3 md:pt-10 md:px-5">
-        <div className="lg:h-[75vh] mt-16 md:mt-7 h-[75vh] rounded-xl bg-gradient-to-b from-brand-core2 via-brand-core2 relative">
-          <div className="grid lg:grid-cols-2 h-full items-center justify-center">
+        <div className="lg:h-[75vh] overflow-hidden mt-16 md:mt-7 h-[75vh] rounded-xl  relative">
+          <video
+            autoPlay
+            loop
+            // playsInline
+            muted
+            className="object-cover w-full h-full absolute pointer-events-none "
+            src={`https://videos.pexels.com/video-files/29607597/12742138_1920_1080_30fps.mp4`}
+          ></video>
+
+          <div className="absolute w-full grid lg:grid-cols-2 h-full items-center justify-center bg-gradient-to-b from-brand-core2/50 to-brand-core2/60">
             <div className="flex justify-center hover:rotate-3 duration-300 hover:animate-pulse">
               <div className="relative md:w-2/3 h-fit z-10">
                 {/* <Image alt="" fill src={"/assets/hero.png"} /> */}
@@ -44,7 +53,7 @@ export default function Hero(props: IProps) {
                 <div className="flex mt-2 p-3 lg:mt-8 text-white lg:gap-10 items-center font-montserrat lg:px-16  lg:items-start justify-center text-center mx-2 hover:scale-105 duration-300 flex-col">
                   <button
                     // target="_blank"
-                    className="py-2 px-8 bg-brand-core2 text-brand-dark rounded-md animate-bounce lg:text-2xl hover:bg-brand-dark hover:text-white duration-300 font-bold "
+                    className="py-2 px-8 bg-brand-yellow text-brand-dark rounded-md animate-bounce lg:text-2xl hover:bg-brand-dark hover:text-white duration-300 font-bold "
                     // href={"https://bit.ly/AlphaPromo50ribu"}
                     onClick={() => scrollPricing("pricing")}
                   >

@@ -1,19 +1,9 @@
 "use client";
 
-import About from "@/components/landing/About";
-import AboutAlpha from "@/components/landing/AboutAlpha";
-import Client from "@/components/landing/Client";
 import Marque from "@/components/landing/components/Marque";
-import Media from "@/components/landing/components/Media";
 import Ending from "@/components/landing/Ending";
 import Hero from "@/components/landing/Hero";
-import Portofolio from "@/components/landing/Portofolio";
 import Pricing from "@/components/landing/Pricing";
-import Section1 from "@/components/landing/Section1";
-import Section2 from "@/components/landing/Section2";
-import Section3 from "@/components/landing/Section3";
-import Services from "@/components/landing/Services";
-import Testimoni from "@/components/landing/Testimoni";
 import Navbar from "@/components/layout/Navbar";
 import { useSection } from "@/zustand/useNav";
 import { useEffect } from "react";
