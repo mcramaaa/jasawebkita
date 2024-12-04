@@ -1,8 +1,7 @@
 "use client";
 
 import Marque from "@/components/landing/components/Marque";
-import Ending from "@/components/landing/Ending";
-import Hero from "@/components/landing/Hero";
+import HeroV2 from "@/components/landing/HeroV2";
 import Pricing from "@/components/landing/Pricing";
 import Navbar from "@/components/layout/Navbar";
 import { useSection } from "@/zustand/useNav";
@@ -27,7 +26,7 @@ export default function Home() {
   }, [section]);
 
   return (
-    <div className="relative">
+    <main className="relative">
       <div id="home">
         <div className="z-40 sticky w-full">
           <Navbar />
@@ -35,7 +34,8 @@ export default function Home() {
       </div>
 
       <div>
-        <Hero scrollPricing={scrollToSection} />
+        {/* <Hero scrollPricing={scrollToSection} /> */}
+        <HeroV2 />
       </div>
       <Marque />
       {/* <AboutAlpha /> */}
@@ -54,8 +54,6 @@ export default function Home() {
       <Section3 />
       <div id="testi"></div>
       <Testimoni /> */}
-
-      <Ending />
-    </div>
+    </main>
   );
 }

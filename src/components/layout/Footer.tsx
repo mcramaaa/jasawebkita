@@ -1,97 +1,80 @@
 import { FOOTER } from "@/constants/appConstant";
 import { useSection } from "@/zustand/useNav";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
-import { TfiHandPointRight } from "react-icons/tfi";
 
 export default function Footer() {
   const { setSection } = useSection();
 
   return (
-    <div className="relative bg-gradient-to-l from-brand-dark to-brand">
-      {/* <div className="relative w-full -top-[2px] aspect-[9/1] rotate-180">
-        <Image
-          alt=""
-          className="bottom-0 absolute object-cover"
-          fill
-          src={"/shape.svg"}
-        />
-      </div> */}
-      <div className=" gap-6 px-4 lg:px-40 py-10 text-white grid md:grid-cols-2">
-        <div>
-          <h2 className="flex flex-col font-montserrat font-bold text-3xl">
-            <span>Mau Bangun Bisnis</span>
-            <span>Bingung Mulai dari Mana?</span>
-            <span>Ke Alpha Project aja !</span>
-          </h2>
-        </div>
-        <div className="flex items-center gap-4">
-          <TfiHandPointRight className="text-8xl" />
-          <div>
-            <p className="text-sm lg:text-base text-justify">
-              Kalo kamu <span className="font-bold">UMKM</span> atau pengusaha pemula yang mau dibantu dalam
-              optimasi usaha, kamu bisa hubungi kami untuk bantu jemput
-              kesuksesan pertama mu
+    <div className="px-10 mt-10">
+      <div className="relative md:pb-10 bg-brand-core2Dark rounded-3xl overflow-hidden">
+        <p className="absolute bottom-0 translate-y-1/3 w-full font-black text-white/60 font-montserrat text-4xl md:text-7xl lg:text-8xl text-center">
+          JasaWebKita
+        </p>
+        <div className=" gap-6 px-4 lg:px-40 p-8 lg:pb-10 text-white grid md:grid-cols-2">
+          <div className="order-first md:hidden flex flex-col w-full items-center text-center">
+            <button
+              onClick={() => setSection("home")}
+              className="relative hover:scale-110 duration-300"
+            >
+              <p className="text-white font-black font-montserrat text-xl md:text-2xl lg:text-3xl">
+                JasaWebKita
+              </p>
+            </button>
+            <p className="font-bold">
+              Buat website makin mudah hanya dengan 1,4 juta pertahun
             </p>
-            <p className="font-bold text-yellow-400">Hubungi kami !</p>
           </div>
-        </div>
-        <div className="order-first md:hidden">
-          <button
-            onClick={() => setSection("home")}
-            className="aspect-square w-20 relative hover:scale-110 duration-300"
-          >
-            <Image
-              src={"/assets/icon.png"}
-              alt=""
-              fill
-              className="object-contain"
-            />
-          </button>
-        </div>
-        <div className="hidden md:flex items-center">
-          <button
-            onClick={() => setSection("home")}
-            className="aspect-square w-20 relative hover:scale-110 duration-300"
-          >
-            <Image
-              src={"/assets/icon.png"}
-              alt=""
-              fill
-              className="object-contain"
-            />
-          </button>
-        </div>
-        <div className="flex-col">
-          <div className="flex gap-2 mt-10">
-            {FOOTER.sosmed.map((data, i) => (
-              <Link
-                target="_blank"
-                href={data.url}
-                className="text-xl hover:scale-110 hover:bg-brand duration-300 p-2 bg-brand-dark rounded-full text-white"
-                key={i}
+          <div className="hidden md:flex flex-col gap-5 items-center md:items-start">
+            <button
+              onClick={() => setSection("home")}
+              className=" relative hover:scale-110 duration-300"
+            >
+              <button
+                onClick={() => setSection("home")}
+                className="relative hover:scale-110 duration-300"
               >
-                {data.icon}
-              </Link>
-            ))}
+                <p className="text-white font-black font-montserrat text-xl md:text-2xl lg:text-3xl">
+                  JasaWebKita
+                </p>
+              </button>
+            </button>
+            <p className="font-bold">
+              Buat website makin mudah hanya dengan 1,4 juta pertahun
+            </p>
           </div>
-          <div className="flex text-xs px-2 lg:text-sm gap-2 mt-5">
-            <FaLocationDot className="text-lg" />
-            <p>{FOOTER.address}</p>
+          <div className="flex-col flex items-center md:items-end gap-4">
+            <p className="font-black">Hubungi Kami :</p>
+            <div className="flex gap-2">
+              {FOOTER.sosmed.map((data, i) => (
+                <Link
+                  target="_blank"
+                  href={data.url}
+                  className="text-lg hover:scale-110 hover:bg-brand duration-300 p-2 bg-white rounded-full text-brand-dark"
+                  key={i}
+                >
+                  {data.icon}
+                </Link>
+              ))}
+            </div>
+            <div className="flex text-xs px-2 lg:text-sm gap-2">
+              <FaLocationDot className="text-lg" />
+              <p>{FOOTER.address}</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="text-center  text-white text-sm py-3 border-t border-brand">
+      <div className="text-center text-gray-600 text-xs md:text-sm py-3">
         <p>
-          © Copyright 2024 Alpha Project Crafted by{" "}
+          © Copyright 2021{" "}
           <Link
             href={"https://whitelabel.bbiz.co.id/"}
             target="_blank"
             className="font-bold"
           >
-            BBIZ Engine
+            JasaWebKita
           </Link>{" "}
           All rights reserved
         </p>

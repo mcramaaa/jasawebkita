@@ -23,6 +23,7 @@ const config: Config = {
           grey: "#2d2e32",
           core: "#00e5ff",
           core2: "#00c3ff",
+          core2Dark: "#0085ad",
           coreDark: "#013a41",
           darkgrey: "#1c1d20",
         },

@@ -22,7 +22,7 @@ export const NAVMENU = [
   //   label: "Pricing",
   //   refKey: "pricing",
   // },
-  
+
   {
     value: "#Testimoni",
     label: "Testimoni",
@@ -44,24 +44,24 @@ export const ABOUTMARQUEE = " .Portofolio Client by Alpha Project";
 
 export const MEDIALIST = [
   {
-    id : 1,
-    img : '/assets/slider/slider_head.webp'
+    id: 1,
+    img: "/assets/slider/slider_head.webp",
   },
   {
-    id : 2,
-    img : '/assets/slider/slider_basic.webp'
+    id: 2,
+    img: "/assets/slider/slider_basic.webp",
   },
   {
     id: 3,
-    img : '/assets/slider/slider_client.webp'
-  }
-]
+    img: "/assets/slider/slider_client.webp",
+  },
+];
 
 export const ABOUTALPHAVALUE = {
-  title:"Alpha Project",
-  desc:"Alpha Project suatu perushaan yang bergerak di bidang kreatif dan konten kreator bagi para perintis umkm ",
-  video:"https://youtu.be/t9jLby937bE"
-}
+  title: "Alpha Project",
+  desc: "Alpha Project suatu perushaan yang bergerak di bidang kreatif dan konten kreator bagi para perintis umkm ",
+  video: "https://youtu.be/t9jLby937bE",
+};
 
 export const ABOUTVALUE = {
   // label: "Pernahkah Kamu Merasa :",
@@ -81,101 +81,99 @@ export const SECTION1 = {
   desc: "Mengapa Optimasi Sosial Media Begitu Penting?",
   value: [
     {
-      label:"Jangkauan Pelanggan Semakin Meningkat",
+      label: "Jangkauan Pelanggan Semakin Meningkat",
       desc: "Jangan cuma jualan konvensional kaya di pasar. Jangkau banyak pelanggan di sosial media tanpa batasan waktu, tempat, dan lokasi, dengan strategi digital.",
-      image:"/assets/section1/1.png"
+      image: "/assets/section1/1.png",
     },
     {
-      label:"Brand-mu Semakin Terkenal",
+      label: "Brand-mu Semakin Terkenal",
       desc: "Brand kamu bisa semakin dikenal dan diingat banyak orang dengan membuat konten yang berkesan dan unik.",
-      image:"/assets/section1/2.png"
+      image: "/assets/section1/2.png",
     },
     {
-      label:"Meningkatkan Kedekatan dengan Pelanggan",
+      label: "Meningkatkan Kedekatan dengan Pelanggan",
       desc: "Berinteraksi dengan pelanggan di sosial media dapat meningkatkan loyalitas dan kedekatan emosional dengan brandmu.",
-      image:"/assets/section1/3.png"
+      image: "/assets/section1/3.png",
     },
     {
-      label:"Kredibilitas dan Kepercayaan Meningkat",
+      label: "Kredibilitas dan Kepercayaan Meningkat",
       desc: "Brand yang aktif dan memiliki ulasan yang baik di sosial media cenderung lebih diminati oleh pelanggan.",
-      image:"/assets/section1/4.png"
+      image: "/assets/section1/4.png",
     },
   ],
 };
 
 export const SERVICESLIST = [
   {
-    icon:<LuCalendar />,
-    label:"CONTENT PLANNER"
+    icon: <LuCalendar />,
+    label: "CONTENT PLANNER",
   },
   {
-    icon:<CgTranscript />,
-    label:"SCRIPT WRITER"
+    icon: <CgTranscript />,
+    label: "SCRIPT WRITER",
   },
   {
     icon: <BsStars />,
-    label:"TALENT"
+    label: "TALENT",
   },
   {
-    icon:<RiPenNibLine />,
-    label:"GRAPHIC DESIGNER"
+    icon: <RiPenNibLine />,
+    label: "GRAPHIC DESIGNER",
   },
   {
-    icon:<LiaPhotoVideoSolid />,
-    label:"VIDEO EDITOR"
+    icon: <LiaPhotoVideoSolid />,
+    label: "VIDEO EDITOR",
   },
   {
-    icon:<LuVideo />,
-    label:"VIDEOGRAPHER"
+    icon: <LuVideo />,
+    label: "VIDEOGRAPHER",
   },
-  
-
-]
+];
 
 export const CLIENTLIST = [
   {
-    img:"/assets/client/AlphaProperti.webp"
+    img: "/assets/client/AlphaProperti.webp",
   },
   {
-    img:"/assets/client/ElangBhumi.webp"
+    img: "/assets/client/ElangBhumi.webp",
   },
   {
-    img:"/assets/client/FortunaBadja.webp"
+    img: "/assets/client/FortunaBadja.webp",
   },
   {
-    img:"/assets/client/OliviaStuff.webp"
+    img: "/assets/client/OliviaStuff.webp",
   },
   {
-    img:"/assets/client/OscarADS.webp"
+    img: "/assets/client/OscarADS.webp",
   },
   {
-    img:"/assets/client/ProfilEmas.webp"
+    img: "/assets/client/ProfilEmas.webp",
   },
   {
-    img:"/assets/client/TWSLaw.webp"
+    img: "/assets/client/TWSLaw.webp",
   },
   {
-    img:"/assets/client/alphaRealty.webp"
+    img: "/assets/client/alphaRealty.webp",
   },
   {
-    img:"/assets/client/anugerahKarya.webp"
+    img: "/assets/client/anugerahKarya.webp",
   },
   {
-    img:"/assets/client/BBIZ.webp"
+    img: "/assets/client/BBIZ.webp",
   },
   {
-    img:"/assets/client/geoanField.webp"
+    img: "/assets/client/geoanField.webp",
   },
   {
-    img:"/assets/client/thalitaAtmaSentosa.webp"
+    img: "/assets/client/thalitaAtmaSentosa.webp",
   },
   {
-    img:"/assets/client/TWSConsulting.webp"
+    img: "/assets/client/TWSConsulting.webp",
   },
   {
-    img:"/assets/client/easyTax.webp"
+    img: "/assets/client/easyTax.webp",
   },
-]
+];
 
 export const SECTION2 = {
   label: "Bayangkan! Jika Kamu Bisa :",
@@ -211,25 +209,20 @@ export const SECTION2 = {
 
 export const TESTI = [
   {
-    label:"PT. Akas",
+    label: "PT. Akas",
     img: "/assets/testimoni/akas.webp",
-    video:
-      "https://www.youtube.com/shorts/JfueXheHE8k",
+    video: "https://www.youtube.com/shorts/JfueXheHE8k",
   },
   {
-    label:"Alpha Properti",
+    label: "Alpha Properti",
     img: "/assets/testimoni/alphaproperti.webp",
-    video:
-      "https://www.youtube.com/shorts/Jf1IepUiygE",
+    video: "https://www.youtube.com/shorts/Jf1IepUiygE",
   },
   {
-    label:"Profil Emas Konsultan",
+    label: "Profil Emas Konsultan",
     img: "/assets/testimoni/profile_emas_konsultan.webp",
-    video:
-      "https://www.youtube.com/shorts/tPF1GmUEd8k",
+    video: "https://www.youtube.com/shorts/tPF1GmUEd8k",
   },
-  
-  
 ];
 
 export const PACKAGE = [
@@ -259,7 +252,7 @@ export const PORTOFLIO = {
   title: "Portofolio Kami",
   desc: [
     "Bukti nyata dari tangan-tangan terampil tim kami yang profesional.",
-    "Menjadikan para business owner rela antri untuk menggunakan jasa Alpha Project"
+    "Menjadikan para business owner rela antri untuk menggunakan jasa Alpha Project",
   ],
   items: [
     {
@@ -295,24 +288,19 @@ export const PORTOFLIO = {
 export const FOOTER = {
   open: "",
   email: "",
-  address:
-    "Skyloft Soho No.1868 Ciputra World, Jl. Mayjen Sungkono No.89, Gunung Sari, Dukuhpakis, Surabaya, East Java 60224",
+  address: "Sidoarjo, East Java",
   sosmed: [
     // {
     //   url: "/",
     //   icon: <FaFacebookF />,
     // },
     {
-      url: "https://www.instagram.com/alphasosmed.project/",
+      url: "https://www.instagram.com/mch.rama__/",
       icon: <FaInstagram />,
     },
     {
-      url: "https://api.whatsapp.com/send?phone=6285184864504&text=Hai%2C%20Alpha%20Project!%20Mau%20konsultasi%20untuk%20upgrading%20sosial%20media%20brand%20saya%2C%20nih!%20",
+      url: "https://api.whatsapp.com/send?phone=6281330129266&text=Hai%2C%20JasaWebKita",
       icon: <FaWhatsapp />,
-    },
-    {
-      url: "https://www.tiktok.com/@alphaads.project?_t=8pSwKW84qrA&_r=1",
-      icon: <FaTiktok />,
     },
   ],
 };
